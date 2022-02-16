@@ -94,6 +94,24 @@ list-style-type:none;
 font-weight:900;
 color:var(--mm);}
 
+#navegacion_secundaria_curso_1
+{background:var(--bl);
+display:flex;
+color:var(--ne);
+flex-direction:column;
+align-items:center;
+padding:50px 25px;
+gap:25px;}
+
+#navegacion_secundaria_curso_1 li
+{margin:25px 0 0 0;}
+
+#navegacion_secundaria_curso_1 a
+{text-decoration:none;
+list-style-type:none;
+font-weight:900;
+color:var(--mm);}
+
 
 /* CONTENIDO CURSO ---------------*/
 /* CONTENIDO CURSO ---------------*/
