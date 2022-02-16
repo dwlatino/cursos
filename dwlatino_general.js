@@ -51,17 +51,16 @@ botonMenuCabecera.addEventListener('click', function() {
 contenidoPieDePagina.innerHTML =
 `
 <h2 id="cursos_pie_de_pagina">CURSOS</h2>
-<a href="cursos_html_1.html">
+<a href="curso_html_1.html">
 	<p>1. Tu primer HTML</p>
 </a>
-<a href="cursos_html_2.html">
+<a href="curso_html_2.html">
 	<p>2. Avanzando en HTML</p>
 </a>
 <br>
 
 <img src="foto_personal.png" alt="foto personal" style="max-width:250px">
-<p>Me apasiona aprender y guiar a otros en su proceso de 
-aprendizaje. Puedo impulsarte en tu proyecto de construirte en un front-end developer.</p>
+<p>Me apasiona aprender y guiar a otros. Puedo impulsarte en tu proyecto de convertirte en un front-end developer.</p>
 <p>Contáctame a través de la información que encontrarás más abajo.</p>
 
 <h2 id="contacto_pie_de_pagina">CONTACTO</h2>

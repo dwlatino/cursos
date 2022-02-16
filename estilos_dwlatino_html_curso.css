@@ -1,0 +1,133 @@
+*
+{margin:0;
+padding:0;
+box-sizing:border-box;}
+
+:root
+{--mm:#303;
+--mo:#101;
+--am:#ef0;
+--bl:#fff;
+--ne:#000;
+--he1:2.25rem;
+--he2:2rem;
+--he3:1.75rem;
+--he4:1.5rem;
+--btnw:200px;
+--btnh:40px;
+--btnr:400px;
+--prg:16px;
+--prgw:900;
+--prgmxw:500px;
+--prglnh:25px;
+}
+
+html
+{font-size:16px;
+font-family:sans-serif;
+scroll-behavior:smooth;}
+
+body
+{background:var(--mm);
+overflow: scroll;}
+
+#portada_curso
+{background:var(--mm);
+display:flex;
+color:var(--bl);
+flex-direction:column;
+align-items:center;
+padding:50px 25px;
+gap:25px;}
+
+#portada_curso h1
+{text-align:center;
+line-height:3rem;}
+
+#portada_curso button
+{width:var(--btnw);
+height:var(--btnh);
+border-radius:var(--btnr);
+background:var(--am);
+border:none;
+color:var(--ne);
+font-size:var(--prg);
+font-weight:var(--prgw);}
+
+
+/* CONTENIDO CURSO ---------------*/
+/* CONTENIDO CURSO ---------------*/
+/* CONTENIDO CURSO ---------------*/
+/* CONTENIDO CURSO ---------------*/
+/* CONTENIDO CURSO ---------------*/
+/* CONTENIDO CURSO ---------------*/
+/* CONTENIDO CURSO ---------------*/
+/* CONTENIDO CURSO ---------------*/
+
+#contenido_curso
+{background:var(--am);
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:50px 25px;
+gap:25px;}
+
+#contenido_curso p
+{max-width:var(--prgmxw);
+line-height:var(--prglnh);}
+
+#contenido_curso_2
+{background:var(--bl);
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:50px 25px;
+gap:25px;}
+
+#contenido_curso_2 p
+{max-width:var(--prgmxw);
+line-height:var(--prglnh);}
+
+
+
+
+/* MEDIA QUERIES ---------------*/
+/* MEDIA QUERIES ---------------*/
+/* MEDIA QUERIES ---------------*/
+/* MEDIA QUERIES ---------------*/
+/* MEDIA QUERIES ---------------*/
+/* MEDIA QUERIES ---------------*/
+/* MEDIA QUERIES ---------------*/
+/* MEDIA QUERIES ---------------*/
+
+@media only screen and (max-width:450px)
+{
+
+:root
+{--mm:#303;
+--mo:#101;
+--am:#ef0;
+--bl:#fff;
+--ne:#000;
+--he1:1.5rem;
+--he2:2rem;
+--he3:1.75rem;
+--he4:1.5rem;
+--btnw:200px;
+--btnh:40px;
+--btnr:400px;
+--prg:16px;
+--prgw:900;
+--prgmxw:500px;
+--prglnh:25px;
+}
+
+
+}
+
+
+
+
+
+
+
