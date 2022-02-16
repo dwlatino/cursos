@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device.width, initial-scale=1.0">
+		<meta name="author" content="Eduardo Osteicoechea">
+		<meta name="description" content="Aprende HTML desde cero">
+		<link rel="stylesheet" href="estilos_dwlatino_html.css">
+		<title>Mi primer head en HTML</title>
+		<script src="dwlatino_general.js" defer></script>
+		<meta name="theme-color" content="#303">
+		<link rel="shortcut icon" type="image/svg" href="icono.svg">
+		<link rel="stylesheet" href="estilos_dwlatino_html_curso.css">
+		<script src="dwlatino_cursos.js" defer></script>
+	</head>
+
+	<body>
+	
+		<header id="cabecera">
+			<!--CONTENIDO INSERTADO A TRAVES DE SCRIPT EN HEAD-->
+		</header>
+		<header id="navegacion_movil">
+			<!--CONTENIDO INSERTADO A TRAVES DE SCRIPT EN HEAD-->
+		</header>
+
+		<header id="portada_curso">
+			<img src="html5_logo_seeklogo.com.svg" alt="logo de html5" style="max-width:250px">
+			<h1>HTML<br> el lenguaje de construcción de la web.</h1>
+			<a href="#contenido_curso">
+				<button>comenzar</button>
+			</a>
+		</header>
+		
+		<section id="navegacion_curso_1">
+			<!--CONTENIDO INSERTADO A TRAVES DE SCRIPT EN HEAD-->
+		</section>
+		
+		<article id="contenido_curso">
+			<h1>Mi primer "head" en HTML</h1>
+			<p>Podemos expresar la estructura general de todo documento 
+			de HTML de esta manera:</p>
+			<code>
+			1 &#60!DOCTYPE html&#62<br>
+			2 &#60html lang="es"&#62<br>
+			3 &#60head&#62<br><br>
+			4 &#60/head&#62<br>
+			5 &#60body&#62<br><br>
+			6 &#60/body&#62<br>
+			7 &#60/html&#62
+			</code>
+			<p>El primer tag señala qué tipo de documento estamos escribiendo</p>
+			<p>El segundo tag, que contiene a los demás tags (líneas 2-7), representa 
+			la base de todo el documento HTML. Todo el código del documento 
+			se escribe dentro de éste. Este tag tiene por atributo una abreviación 
+			del idioma de la página (<strong>"lang="es"</strong> para español).</p>
+			<p>El tercer tag representa el "head" (líneas 3-4). Éste contiene la meta-data del documento; 
+			es decir, información sobre la información de la web. Su contenido no se muestra en la web, 
+			pero es considerada por los navegadores y motores de 
+			búsqueda para ubicar la página y mostrar su información de cierta manera. </p>
+			<p>Por último, el "body" contiene toda información que se muestra en la página web.
+			Podrás imaginar porqué es el más extenso del documento.</p>
+			<p>En esta sesión nos enfocaremos en el "head" de html y en sus elementos.</p>
+		</article>
+		
+		<article id="contenido_curso_2">
+			<h2>El "head" tag</h2>
+			<p>El "head" tag, o etiqueta superior, puede contener 6 etiquetas que asisten a los 
+			navegadores y definen cómo se mostrará la información en la página. Aquí está 
+			una lista de ellas.</p>
+			<p>Te invito a escribir los tags que mostraré mientras avanzamos en la 
+			sesión. Usarás el contenido de esta sesión en el resto del curso.</p>
+		</article>
+		
+			<article id="contenido_curso">
+			<h2>1. El "title" tag</h2>
+			<p>La etiqueta de título define el nombre que los buscadores 
+			identificarán de tu documento.</p>
+			<code>
+			1 &#60!DOCTYPE html&#62<br>
+			2 &#60html lang="es"&#62<br><br>
+			3 &#60head&#62<br><br>
+			4 <strong>&#160&#60title&#62<br>
+			&#160&#160&#160&#160dwlatino <br>
+			&#160&#160&#160&#60/title&#62</strong><br><br>
+			5 &#60/head&#62<br><br>
+			6 &#60body&#62<br><br>
+			7 &#60/body&#62<br>
+			8 &#60/html&#62
+			</code>
+			<p>El texto contenido por éste tag no sólo será importante 
+			para ubicar tu página en la web, sino que también se mostrará 
+			en la pestaña superior del navegador.</p>
+			<img src="img_curso_html_1_4.png" alt="guardando el primer archivo de HTML" style="max-width:250px"" >
+			<p>El título que definas dentro del "title" tag aparecerá incluso 
+			al compartir el URL de la página a través de algunas aplicaciones.</p>
+			<img src="img_curso_html_1_5.png" alt="guardando el primer archivo de HTML" style="max-width:250px"" >
+		</article>
+
+
+		<article id="contenido_curso_2">
+		<h2>2. El "base" tag</h2>
+			<p>La etiqueta "base" especifica el URL que actuará como referente de 
+			los demás URLs de la página actual.</b>
+			<p>Los sitios web pueden componerse de varias páginas entre las que podemos "dezplazarnos". 
+			Con "dezplazarnos" me refiero al cambio de la página que visualizamos 
+			en un sitio web, o en el internet como tal.</p>
+			<p>Por ejemplo, podemos transportarnos desde la página de inicio 
+			de una web a su página de contacto y luego acceder a su página de recusos.</p>
+			<p>Para que este "dezplazamiento" pueda ocurrir, necesitamos 
+			crear una estructura de ubicaciones para los sitios web.</p>
+			<p>En la realidad, toda ubicación debe definirse dependiendo de 
+			referentes y ésto no es diferente en la navegación web.</p>
+			<p>La etiqueta "base" define qué parte del sitio web será el 
+			punto de referencia a partir del cual nos dezplazaremos.</p>
+			<code>
+			1 &#60!DOCTYPE html&#62<br>
+			2 &#60html lang="es"&#62<br><br>
+			3 &#60head&#62<br>
+			4 &#60title&#62dwlatino&#60/title&#62<br><br>
+			5 <strong>&#160&#60base<br>
+			&#160&#160&#160url="/index.html"
+			<br>&#160&#160&#160target="_blank"&#62<br><br></strong>
+			6 &#60/head&#62<br><br>
+			7 &#60body&#62<br><br>
+			8 &#60/body&#62<br>
+			9 &#60/html&#62
+			</code>
+			<p>Comprenderás esto mejor cuando estudiemos la estructura de 
+			sendas de las páginas construídas en HTML.</p>
+		</article>
+		
+		<article id="contenido_curso">
+		<h2>3. El "script" tag</h2>
+			<p>Este tag es muy emocionante.</b>
+			<p>Los sitios web pueden componerse de varias páginas entre las que podemos "dezplazarnos". 
+			Con "dezplazarnos" me refiero al cambio de la página que visualizamos 
+			en un sitio web, o en el internet como tal.</p>
+			<p>Por ejemplo, podemos transportarnos desde la página de inicio 
+			de una web a su página de contacto y luego acceder a su página de recusos.</p>
+			<p>Para que este "dezplazamiento" pueda ocurrir, necesitamos 
+			crear una estructura de ubicaciones para los sitios web.</p>
+			<p>En la realidad, toda ubicación debe definirse dependiendo de 
+			referentes y ésto no es diferente en la navegación web.</p>
+			<p>La etiqueta "base" define qué parte del sitio web será el 
+			punto de referencia a partir del cual nos dezplazaremos.</p>
+			<code>
+			1 &#60!DOCTYPE html&#62<br>
+			2 &#60html lang="es"&#62<br><br>
+			3 &#60head&#62<br>
+			4 &#60title&#62dwlatino&#60/title&#62<br>
+			5 &#60base url="/index.html" target="_blank"&#62<br><br>
+			6 <strong>&#60script src="dwlatino_general.js"&#62&#60/script&#62</strong><br><br>
+			6 &#60/head&#62<br><br>
+			7 &#60body&#62<br><br>
+			8 &#60/body&#62<br>
+			9 &#60/html&#62
+			</code>
+			<p>Comprenderás esto mejor cuando estudiemos la estructura de 
+			sendas de las páginas construídas en HTML.</p>
+		</article>
+
+
+
+
+
+		
+		<footer id="pie_de_pagina">
+			<!--CONTENIDO INSERTADO A TRAVES DE SCRIPT EN HEAD-->
+		</footer>
+
+	</body>
+</html>

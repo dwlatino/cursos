@@ -12,6 +12,7 @@
 		<meta name="theme-color" content="#303">
 		<link rel="shortcut icon" type="image/svg" href="icono.svg">
 		<link rel="stylesheet" href="estilos_dwlatino_html_curso.css">
+		<script src="dwlatino_cursos.js" defer></script>
 	</head>
 
 	<body>
@@ -31,38 +32,78 @@
 			</a>
 		</header>
 		
+		<section id="navegacion_curso_1">
+			<!--CONTENIDO INSERTADO A TRAVES DE SCRIPT EN HEAD-->
+		</section>
+		
 		<article id="contenido_curso">
 			<h1>Mis primeros elemtos en HTML</h1>
 			<p>Todo documento de HTML se construye con elementos llamados <strong>"tags"</strong> (etiquetas).</p>
 			<p>Un "tag" es un conjunto de símbolos predeterminados que le indican a los navegadores web y 
 			a los motores de búsqueda, cual es el contenido, función y apariencia del contenido visible de 
-			la página.
-			<p>Todos los tags de HTML se redactan de esta manera:</p>
-			<code></code>
+			la página.</p>
+			<p>Los tags de HTML se escriben de estas dos maneras:</p>
+			<code><strong>&#60&#62&#60/&#62</strong><br><br><strong>&#60&#62</strong></code>
+			<p>Dentro de éstos símbolos de "mayor qué" y "menor qué", 
+			escribimos algunos términos o abreciaciones de los mismos 
+			para definir el "tipo" del tag y de ser necesario sus "atributos".</p>
+			<p>La diferencia entre los tipos de "tag" que vimos más arriba es que los primeros pueden contener 
+			texto y otros "tags".</p>
+			<p>El segundo tipo de "tag" se llama "empty" (vacio), aludiendo al hecho de que 
+			no contiene texto y no se compone de un par de tags (como sí es el caso de los tags contenedores).</p>
 		</article>
 		
 		<article id="contenido_curso_2">
-			<p>Una vez que actives el editor de texto, escribe <strong>&#60DOCTYPE html&#62</strong> en 
-			la primera línea.</p>
-			<img src="img_curso_html_1_1.png" alt="guardando el primer archivo de HTML" style="max-width:250px"" >
-			<p>Cuida de escribir las palabras manteniendo su formato en mayúscula y minúscula 
-			de acuerdo sea el caso.</p>
-			<p>Cuando presiones el comando o botón de guardado, 
-			deberás escribir el nombre de tu primer archivo seguido de un 
-			punto y la palabra "html" sin espacio entre éstos últimos.</p>
-			<img src="img_curso_html_1_2.png" alt="guardando el primer archivo de HTML" style="max-width:250px"" >
-			<p>Al guardar el archivo, habrás creado tu 
-			primer documento de HTML y estarás casi listo para comenzar a 
-			programar.</p>
-			<p>Lo último que haremos en esta sesión será crear una carpeta en tu ubicación 
-			de preferencia y mover el archivo que guardaste a esta carpeta.</p>
-			<p>Esto será muy importante para importar archivos a la página y navegar con 
-			facilidad entre sus partes.</p>
-			<img src="img_curso_html_1_3.png" alt="guardando el primer archivo de HTML" style="max-width:250px"" >
-			<p>En la próxima página comenzaremos a escribir código en HTML 
-			y a construir nuestra primera web.</p>
+			<h1>El contenido de los "tags"</h1>
+			<p>Todo tag contiene tres o cuatro elementos:</p>
+			<ul>
+				<li>Símbolos de "mayor y menor que".</li>
+				<li>Nombre de tag.</li>
+				<li>Atributos del tag.</li>
+				<li>Información contenida entre los tags (en el caso de los tags contenedores).</li>
+			</ul>
+			<p>Para ilustrar esto comenzaremos a crear nuestra primera página web.</p>
+			<p>En el archivo que creamos anteriormente (mi_primer_html.html), escribiremos tres "tags":</p>
+			<code>
+			1 &#60!DOCTYPE html&#62<br>
+			2 &#60html lang="es"&#62&#60/html&#62
+			</code>
+			<p>Como podrás notar, el tag escrito en la primera línea es un tag "vacío", mientras que el par de la segunda 
+			línea puede contener texto y otros tags.</p>
+			<p>Los pares de tags que forman contenedores siempre incluyen un slash inclinado hacia adelante <strong>("/")</strong> luego del símbolo 
+			de "menor que" <strong>("<")</strong> que apertura el segundo tag.</p>
+			<code>
+			1 &#60!DOCTYPE html&#62<br>
+			2 &#60html lang="es"&#62 ... &#60<strong>/</strong>html&#62
+			</code>
+			<p>El contenido alojado entre los tags contenedores se ubica entre los símbolos de "mayor que" <strong>(">")</strong> 
+			y "menor que" <strong>("<")</strong> que define el final del primer tag y el inicio del segundo respectivamente.</p>	
+			<code>
+			1 &#60!DOCTYPE html&#62<br>
+			2 &#60html lang="es"&#62 <strong>...CONTENIDO...</strong> &#60/html&#62
+			</code>
+			<p>El nombre de los tag se ubica dentro de los símbolos de "mayor que" (">") 
+			y "menor que" ("<").</p>
+			<code>
+			1 &#60!DOCTYPE html&#62<br>
+			2 &#60<strong>html</strong>&#62 ... &#60/<strong>html</strong>&#62
+			</code>
+			<p>Los atributos de los tags siempre se ubican luego del nombre del tag y sólo dentro del primer tag 
+			en el caso de los tags contenedores.</p>
+			<code>
+			1 &#60!DOCTYPE html&#62<br>
+			2 &#60html <strong>lang="es"</strong>&#62 ... &#60/html&#62
+			</code>
+			<p>Profundizaremos en los atributos de los tag luego, pero por ahora 
+			será suficiente saber que éstos definen aspectos, valores, características e información 
+			específica de los tags que los contienen.</p>
 		</article>
-		
+
+		<article id="contenido_curso">
+			<p>En la próxima sesión estudiaremos el tag llamado "head", preparando nuestro 
+			camino para formatear y construir nuestra primera ṕagina web.</p>
+		</article>
+
 
 		
 		<footer id="pie_de_pagina">

@@ -51,10 +51,10 @@ botonMenuCabecera.addEventListener('click', function() {
 contenidoPieDePagina.innerHTML =
 `
 <h2 id="cursos_pie_de_pagina">CURSOS</h2>
-<a href="curso_html_1.html">
+<a href="curso_html_1_1.html">
 	<p>1. Tu primer HTML</p>
 </a>
-<a href="curso_html_2.html">
+<a href="curso_html_2_1.html">
 	<p>2. Avanzando en HTML</p>
 </a>
 <br>
