@@ -36,9 +36,11 @@ code
 background:var(--mo);
 color:var(--bl);
 max-width:var(--prgmxw);
+min-width:var(--prgmxw);
 font-family:monospace;
 padding:25px 50px;
-border-radius:10px;}
+border-radius:10px;
+overflow-x:scroll;}
 
 code strong
 {color:var(--am);}
@@ -144,6 +146,9 @@ line-height:var(--prglnh);}
 #contenido_curso li
 {line-height:25px;}
 
+#contenido_curso img
+{border-radius:10px;}
+
 #contenido_curso_2
 {background:var(--bl);
 display:flex;
@@ -160,6 +165,8 @@ line-height:var(--prglnh);}
 {line-height:25px;
 max-width:var(--prgmxw);}
 
+#contenido_curso_2 img
+{border-radius:10px;}
 
 /* MEDIA QUERIES ---------------*/
 /* MEDIA QUERIES ---------------*/
@@ -192,6 +199,16 @@ max-width:var(--prgmxw);}
 --prglnh:25px;
 }
 
+
+code
+{display:block;
+background:var(--mo);
+color:var(--bl);
+width:90%;
+font-family:monospace;
+padding:25px 25px;
+border-radius:10px;
+overflow-x:scroll;}
 
 }
 

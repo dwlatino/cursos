@@ -214,7 +214,8 @@ line-height:var(--prglnh);}
 
 #pie_de_pagina a
 {text-decoration:none;
-color:var(--am);}
+color:var(--mc);
+font-weight:var(--prgstg);}
 
 #pie_de_pagina img
 {border-radius:500px;}
