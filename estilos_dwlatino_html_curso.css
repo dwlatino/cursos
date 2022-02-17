@@ -43,8 +43,15 @@ border-radius:10px;}
 code strong
 {color:var(--am);}
 
+/* PORTADA CURSO ---------------*/
+/* PORTADA CURSO ---------------*/
+/* PORTADA CURSO ---------------*/
+/* PORTADA CURSO ---------------*/
+/* PORTADA CURSO ---------------*/
+/* PORTADA CURSO ---------------*/
+/* PORTADA CURSO ---------------*/
 
-#portada_curso
+#portada_curso_1
 {background:var(--mm);
 display:flex;
 color:var(--bl);
@@ -53,11 +60,11 @@ align-items:center;
 padding:50px 25px;
 gap:25px;}
 
-#portada_curso h1
+#portada_curso_1 h1
 {text-align:center;
 line-height:3rem;}
 
-#portada_curso button
+#portada_curso_1 button
 {width:var(--btnw);
 height:var(--btnh);
 border-radius:var(--btnr);

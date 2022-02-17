@@ -6,7 +6,7 @@ contenidoCabecera.innerHTML =
 `
 <a href="index.html">
 	<div id="contenedor_logo">
-	  <img src="logo.svg" alt="Logo de dwlatino" style="max-width:300px">
+	  <img src="img_logo.svg" alt="Logo de dwlatino" style="max-width:300px">
 	</div>
 </a>
 <div id="boton_menu_cabecera">
@@ -54,12 +54,12 @@ contenidoPieDePagina.innerHTML =
 <a href="curso_html_1_1.html">
 	<p>1. Tu primer HTML</p>
 </a>
-<a href="curso_html_2_1.html">
+<a href="#">
 	<p>2. Avanzando en HTML</p>
 </a>
 <br>
 
-<img src="foto_personal.png" alt="foto personal" style="max-width:250px">
+<img src="img_foto_personal.png" alt="foto personal" style="max-width:250px">
 <p>Me apasiona aprender y guiar a otros. Puedo impulsarte en tu proyecto de convertirte en un front-end developer.</p>
 <p>Contáctame a través de la información que encontrarás más abajo.</p>
 

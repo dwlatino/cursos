@@ -12,7 +12,7 @@ navegacionCurso1.innerHTML =
 		<a href="#"><li>5. Tu primer formateado en HTML</li></a>
 		<a href="#"><li>6. Tu primera web en HTML</li></a>
 	</ul>
-`
+`;
 
 navegacionSecundariaCurso1.innerHTML = 
 `
@@ -25,4 +25,20 @@ navegacionSecundariaCurso1.innerHTML =
 		<a href="#"><li>5. Tu primer formateado en HTML</li></a>
 		<a href="#"><li>6. Tu primera web en HTML</li></a>
 	</ul>
+`;
+
+const portadaCurso1 = document.getElementById("portada_curso_1");
+portadaCurso1.innerHTML =
 `
+<img src="img_html5_logo_seeklogo.com.svg" alt="logo de html5" style="max-width:250px">
+<h1>HTML<br> el lenguaje de construcción de la web.</h1>
+<a href="#contenido_curso">
+	<button>comenzar</button>
+</a>
+`;
+
+
+
+
+
+
