@@ -204,7 +204,8 @@ code
 {display:block;
 background:var(--mo);
 color:var(--bl);
-width:90%;
+min-width:95%;
+width:95%;
 font-family:monospace;
 padding:25px 25px;
 border-radius:10px;
