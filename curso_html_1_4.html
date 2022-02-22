@@ -103,16 +103,16 @@
 			<img src="img_curso_html_1_8.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
 			<img src="img_curso_html_1_9.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
 			<p>Como puedes notar en el ejemplo anterior, el formateado predeterminado 
-			de los párrafos, genera un espacio entre vertical entre el primer y el segundo 
+			de los párrafos, genera un espacio vertical entre el primer y segundo 
 			párrafo.</p>
 			<p>Puedes modificar por completo el formateado de párrafos utilizando 
-			CSS o con atributos de estilizado local en los párrafos.</p>
+			CSS o con atributos de estilizado local en tags de párrafo.</p>
 		</article>
 		
 		<article id="contenido_curso_2">
 			<h1>3. Listas</h1>
 			<p>Las listas organizan elementos relacionados dentro de una 
-			pila (serie de elementos seriados en sentido vertical) 
+			pila (serie vertical de elementos relacionados) 
 			que puede estar indexada visiblemente. 
 			Hay tres tipos de listas en html:</p>
 			<ol>
@@ -123,27 +123,26 @@
 			<p>La lista que acabas de leer fue escrita dentro del código 
 			de html para listas ordenadas.</p>
 			<p>Las <b>listas ordenadas</b> son aquellas indexadas con números naturales, 
-			o letras, o números romanos. Las listas <b>no ordenadas</b> son aquellas 
-			indezadas con círculos, discos, asteriscos u otro símbolo.</p>
+			o letras, o números romanos.</p>
+			<p>Las listas <b>no ordenadas</b> son aquellas 
+			indexadas con círculos, discos, asteríscos u otro símbolo.</p>
 			<p>Las listas <b>de descripción</b> automáticamente colocan el 
-			término a definir hacia la izquiera del espacio disponible, y en la próxima línea 
-			ubican su definición luego de un sangrado de línea (el sangrado de línea 
-			es un espacio predeterminado antes del texto 
-			que indica el comienzo de una línea diferente o de un nuevo párrafo). 
+			término a definir hacia la izquiera del espacio disponible y en la próxima línea 
+			ubican su definición. 
 			Éste tipo de lista en HTML5 carece de símbolos precedentes al 
 			término por definir y a su definición.</p>
 			<p>A continuación te mostraré el código de las listas y luego su representación en el 
 			navegador.</p>
 			<code>
 				<strong>&#60ol&#62<br>
-				&nbsp&#60li&#62 Ésta es una lista con indexado visible &#60/li&#62<br>
+				&nbsp&nbsp&#60li&#62 Ésta es una lista con indexado visible &#60/li&#62<br>
 				&#60/ol&#62</strong><br><br>
 				<strong>&#60ul&#62<br>
-				&nbsp&#60li&#62 Ésta es una lista sin indexado visible &#60/li&#62<br>
+				&nbsp&nbsp&#60li&#62 Ésta es una lista sin indexado visible &#60/li&#62<br>
 				&#60/ul&#62</strong><br><br>
 				<strong>&#60dl&#62<br>
-				&nbsp&#60dt&#62 Ésta es una lista de descripción &#60/dt&#62<br>
-				&nbsp&nbsp&#60dd&#62 Aquí escribes la definición del término &#60/dd&#62<br>
+				&nbsp&nbsp&#60dt&#62 Ésta es una lista de descripción &#60/dt&#62<br>
+				&nbsp&nbsp&nbsp&nbsp&#60dd&#62 Aquí escribes la definición del término &#60/dd&#62<br>
 				&#60/dl&#62</strong><br>
 			</code>
 			<img src="img_curso_html_1_11.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
@@ -167,35 +166,38 @@
 			<img src="img_curso_html_1_12.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
 			<img src="img_curso_html_1_13.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
 			<p>Los comentarios también te pueden ayudar a depurar tu código. Puedes identificar 
-			errores imperceptibles a primera vista, encerrando secciones de tu documento 
+			errores imperceptibles a primera vista encerrando secciones de tu documento 
 			dentro de un comentario para ubicar las partes de tu código que contienen 
 			fallas.</p>
 		</article>
 		
 		<article id="contenido_curso_2">
-			<h1>5. Links</h1>
-			<p>Empleamos "links" para desplazarnos entre las páginas de 
+			<h1>5. Hipervínculos</h1>
+			<p>Empleamos hipervínculos para desplazarnos entre las páginas de 
 			un sitio web, para enviar correos, e incluso desplazarnos entre las secciones de una 
 			página.</p>
-			<p>El código para escribir un link es éste:</p>
+			<p>El código para escribir un hipervínculo es éste:</p>
 			<code>
 				<strong>&#60a&nbsphref=" ... "&#62&#60/a&#62</strong>
 			</code>
 			<p>Puedes encerrar <b>tanto texto como otros tags dentro del 
-			tag de "link".</b> Esto te permite 
+			tag "a".</b> Esto te permite 
 			utilizar texto, imágenes, formas e incluso botones como "links".</p>
-			<p>De igual manera puedes escribir solo texto dentro del tag de "link". 
+			<p>De igual manera, puedes escribir solo texto dentro del tag de "link". 
 			Esto hará que se muestre el texto en el formato predeterminado para 
 			los hipervínculos, o en el formato que definas luego.</p>
+			<p>A continuación te mostraré un texto contenido dentro de los tags para 
+			hipervínculos.</p>
+			<a href="#">Éste es un hipervínculo</a>
 			<p>Creamos un link escibiendo su tag y asigando la dirección a la que 
-			nos dirigiremos dentro del atributo "href" de esta manera:</p>
+			nos dirigiremos dentro del atributo <b>"href"</b> de esta manera:</p>
 			<code>
 				<strong>&#60a&nbsphref="dwlatino.github.io/html/#curso_html"&#62&#60/a&#62</strong>
 			</code>
 			<p>Nota que la dirección fue escrita luego del asignador "=" y entre comillas.</p>
 			<p>Otro atributo esencial del link es <b>"target"</b>. Al hacer click sobre un 
 			link, éste se mostrará en la ventana actual de forma predeterminada. El atributo 
-			"target" nos permite cuatro alternativas para controlar la forma en la que 
+			"target" admite cuatro alternativas para controlar la forma en la que 
 			se mostrará el contenido de la dirección a la que nos refiere el link.</p>
 			<dl>
 				<dt>_self</dt>
@@ -219,14 +221,13 @@
 		
 		<article id="contenido_curso">
 			<h1>6. Quiebres de línea</h1>
-			<p>Los quiebres de línea te permiten separar ideas dentro de un 
+			<p>Los quiebres de línea te permiten separar texto o imágenes dentro de un 
 			mismo tag en html.</p>
 			<p>El código para escribir un quiebre de línea es éste:</p>
 			<code>
 				<strong>&#60br&#62</strong>
 			</code>
-			<p>Puedes colocar este tag en cualquier parte de un párrafo, o 
-			de una lista, o sección, y desplazará todo lo que esté a 
+			<p>Puedes colocar este tag en cualquier parte de un párrafo, lista, o sección, y desplazará todo lo que esté a 
 			su derecha o abajo, hacia una nueva línea.</p>
 			<p>A continuación te mostraré un uso de éste tag y 
 			luego su visualización en el navegador.</p>

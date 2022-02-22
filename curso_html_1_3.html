@@ -37,63 +37,92 @@
 			<p>Podemos expresar la estructura general de todo documento 
 			de HTML de esta manera:</p>
 			<code>
-			1 &#60!DOCTYPE html&#62<br>
-			2 &#60html lang="es"&#62<br>
-			3 &#60head&#62<br><br>
-			4 &#60/head&#62<br>
-			5 &#60body&#62<br><br>
-			6 &#60/body&#62<br>
-			7 &#60/html&#62
+			&#60!DOCTYPE html&#62<br>
+			&#60html lang="es"&#62<br>
+			&#60head&#62<br><br>
+			&#60/head&#62<br>
+			&#60body&#62<br><br>
+			&#60/body&#62<br>
+			&#60/html&#62
 			</code>
 			<p>El primer tag señala qué tipo de documento estamos escribiendo</p>
-			<p>El segundo tag, que contiene a los demás tags (líneas 2-7), representa 
+			<p>El segundo tag, que contiene a los demás tags, representa 
 			la base de todo el documento HTML. Todo el código del documento 
 			se escribe dentro de éste. Este tag tiene por atributo una abreviación 
 			del idioma de la página (<strong>lang="es"</strong> para español).</p>
-			<p>El tercer tag representa el "head" (líneas 3-4). Éste contiene la meta-data del documento; 
-			es decir, información sobre la información de la web. Su contenido no se muestra en la web, 
+			<code>
+			&#60!DOCTYPE html&#62<br>
+			<strong>&#60html lang="es"&#62</strong><br>
+			&#60head&#62<br><br>
+			&#60/head&#62<br>
+			&#60body&#62<br><br>
+			&#60/body&#62<br>
+			<strong>&#60/html&#62</strong>
+			</code>
+			<p>El tercer tag representa el "head". 
+			Éste contiene la meta-data del documento; 
+			es decir, información sobre la información de la web. 
+			Su contenido no se muestra en la web, 
 			pero es considerada por los navegadores y motores de 
 			búsqueda para ubicar la página y mostrar su información de cierta manera. </p>
+			<code>
+			&#60!DOCTYPE html&#62<br>
+			&#60html lang="es"&#62<br>
+			<strong>&#60head&#62</strong><br><br>
+			<strong>&#60/head&#62</strong><br>
+			&#60body&#62<br><br>
+			&#60/body&#62<br>
+			&#60/html&#62
+			</code>
 			<p>Por último, el "body" contiene toda información que se muestra en la página web.
-			Éste es el tag más extenso del documento.</p>
+			Típicamente éste es el tag más extenso del documento.</p>
+			<code>
+			&#60!DOCTYPE html&#62<br>
+			&#60html lang="es"&#62<br>
+			&#60head&#62<br><br>
+			&#60/head&#62<br>
+			<strong>&#60body&#62</strong><br><br>
+			<strong>&#60/body&#62</strong><br>
+			&#60/html&#62
+			</code>
 			<p>En esta sesión nos enfocaremos en el "head" de html y en sus elementos.</p>
 		</article>
 		
 		<article id="contenido_curso_2">
-			<h2>El "head" tag</h2>
-			<p>El "head" tag, o etiqueta superior, puede contener 6 etiquetas que asisten a los 
+			<h2>El tag "head"</h2>
+			<p>El tag "head", o etiqueta superior, puede contener 6 etiquetas que asisten a los 
 			navegadores y definen cómo se mostrará la información en la página. Aquí está 
 			una lista de ellas.</p>
 			<code>
-			1&#160&#60!DOCTYPE html&#62<br>
-			2&#160&#60html lang="es"&#62<br>
-			3&#160&#60head&#62<br><br>
-			4&#160<strong>&#60title&#62&#60/title&#62</strong><br>
-			5&#160<strong>&#60base&#62</strong><br>
-			6&#160<strong>&#60script&#62&#60/script&#62</strong><br>
-			7&#160<strong>&#60link&#62</strong><br>
-			8&#160<strong>&#60meta&#62</strong><br>
-			9&#160<strong>&#60style&#62&#60/style&#62</strong><br><br>
-			10&#160&#60/head&#62<br>
-			11&#160&#60/html&#62<br>
+			&#60!DOCTYPE html&#62<br>
+			&#60html lang="es"&#62<br>
+			&#60head&#62<br><br>
+			<strong>&#60title&#62&#60/title&#62</strong><br>
+			<strong>&#60base&#62</strong><br>
+			<strong>&#60script&#62&#60/script&#62</strong><br>
+			<strong>&#60link&#62</strong><br>
+			<strong>&#60meta&#62</strong><br>
+			<strong>&#60style&#62&#60/style&#62</strong><br><br>
+			&#60/head&#62<br>
+			&#60/html&#62<br>
 			</code>
 			<p>Te invito a escribir estos tags y su información mientras avanzamos. 
 			Usarás el contenido de esta sesión en el resto del curso.</p>
 		</article>
 		
 			<article id="contenido_curso">
-			<h2>1. El "title" tag</h2>
+			<h2>1. El tag "title"</h2>
 			<p>La etiqueta de título define el nombre de tu documento. Los buscadores 
 			ubicarán tu página a través del contenido de éste tag.</p>
 			<code>
-			1 &#60!DOCTYPE html&#62<br>
-			2 &#60html lang="es"&#62<br><br>
-			3 &#60head&#62<br><br>
-			4 <strong>&#160&#60title&#62dwlatino&#60/title&#62</strong><br><br>
-			5 &#60/head&#62<br><br>
-			6 &#60body&#62<br><br>
-			7 &#60/body&#62<br>
-			8 &#60/html&#62
+			&#60!DOCTYPE html&#62<br>
+			&#60html lang="es"&#62<br><br>
+			&#60head&#62<br><br>
+			<strong>&#60title&#62dwlatino&#60/title&#62</strong><br><br>
+			&#60/head&#62<br><br>
+			&#60body&#62<br><br>
+			&#60/body&#62<br>
+			&#60/html&#62
 			</code>
 			<p>El texto contenido por éste tag no sólo será importante 
 			para ubicar tu página en la web, sino que también se mostrará 
@@ -106,39 +135,40 @@
 
 
 		<article id="contenido_curso_2">
-		<h2>2. El "base" tag</h2>
+		<h2>2. El tag "base"</h2>
 			<p>La etiqueta "base" especifica el URL que actuará como referente de 
 			los demás URLs de la página actual.</b>
 			<p>Los sitios web pueden componerse de varias páginas entre las que podemos "dezplazarnos". 
 			Con "dezplazarnos" me refiero al cambio de página que visualizamos 
-			en un sitio web, o en el internet como tal.</p>
+			en un sitio web o en el internet como tal.</p>
 			<p>Por ejemplo, podemos transportarnos desde la página de inicio 
 			de una web a su página de contacto y luego acceder a su página de recusos.</p>
 			<p>Para que este "dezplazamiento" pueda ocurrir, necesitamos 
 			crear una estructura de ubicaciones para los sitios web.</p>
-			<p>En la realidad, toda ubicación debe definirse dependiendo de 
+			<p>Toda ubicación debe definirse dependiendo de 
 			referentes y ésto no es diferente en la navegación web.</p>
 			<p>La etiqueta "base" define qué parte del sitio web será el 
 			punto de referencia a partir del cual nos dezplazaremos.</p>
 			<code>
-			1 &#60!DOCTYPE html&#62<br>
-			2 &#60html lang="es"&#62<br><br>
-			3 &#60head&#62<br>
-			4 &#60title&#62dwlatino&#60/title&#62<br><br>
-			5 <strong>&#160&#60base<br>
-			&#160&#160&#160url="/index.html"
-			<br>&#160&#160&#160target="_blank"&#62<br><br></strong>
-			6 &#60/head&#62<br><br>
-			7 &#60body&#62<br><br>
-			8 &#60/body&#62<br>
-			9 &#60/html&#62
+			&#60!DOCTYPE html&#62<br>
+			&#60html lang="es"&#62<br><br>
+			&#60head&#62<br>
+			&#60title&#62dwlatino&#60/title&#62<br><br>
+			<strong>&#60base<br>
+			url="/index.html"<br>
+			target="_blank"&#62<br><br></strong>
+			&#60/head&#62<br><br>
+			&#60body&#62<br><br>
+			&#60/body&#62<br>
+			&#60/html&#62
 			</code>
-			<p>Comprenderás esto mejor cuando estudiemos la estructura de 
+			<p>Comprenderás mejor esto en nuestro curso "avanzando en html", 
+			cuando estudiemos la estructura de 
 			sendas de las páginas construídas en HTML.</p>
 		</article>
 		
 		<article id="contenido_curso">
-		<h2>3. El "script" tag</h2>
+		<h2>3. El tag "script"</h2>
 			<p>Este tag es muy interesante. El "script" tag permite insertar 
 			código de Javascript en el documento 
 			de html.</p>
@@ -147,90 +177,88 @@
 			<p>Éste idioma (Javascript) brinda posibilidades de funcionabilidad 
 			increíblemente amplias para tu página web.</p>
 			<code>
-			1 &#60!DOCTYPE html&#62<br>
-			2 &#60html lang="es"&#62<br><br>
-			3 &#60head&#62<br>
-			4 &#60title&#62dwlatino&#60/title&#62<br>
-			5&nbsp&#60base&nbspurl="/index.html"&nbsptarget="_blank"&#62<br><br>
-			6 <strong>&#60script<br>
-			&#160&#160src="js_dwlatino_general.js"&#62<br>
-			&#160&#160&#60/script&#62</strong><br><br>
-			7 &#60/head&#62<br><br>
-			8 &#60body&#62<br><br>
-			9 &#60/body&#62<br>
-			10 &#60/html&#62
+			&#60!DOCTYPE html&#62<br>
+			&#60html lang="es"&#62<br><br>
+			&#60head&#62<br>
+			&#60title&#62dwlatino&#60/title&#62<br>
+			&#60base&nbspurl="/index.html"&nbsptarget="_blank"&#62<br><br>
+			<strong>&#60script<br>
+			src="js_dwlatino_general.js"&#62<br>
+			&#60/script&#62</strong><br><br>
+			&#60/head&#62<br><br>
+			&#60body&#62<br><br>
+			&#60/body&#62<br>
+			&#60/html&#62
 			</code>
 			<p>HTML define la estructura y contenido de una página web, CSS provee su estilo 
 			y Javascript su funcionalidad.</p>
 			<p>Puedes apreder Javascript más adelante en nuestro curso "Javascript 
-			desde cero"</p>
+			desde cero".</p>
 		</article>
 		
 		<article id="contenido_curso_2">
-		<h2>4. El "link" tag</h2>
-			<p>El "link" tag en el "head" define la dirección del 
+		<h2>4. El tag "link"</h2>
+			<p>El tag "link" define la dirección del 
 			archivo conectado con el presente documento y el tipo de 
 			relación que éste archivo guarda con nuestro documento.</p>
 			<code>
-			1 &#60!DOCTYPE html&#62<br>
-			2 &#60html lang="es"&#62<br><br>
-			3 &#60head&#62<br>
-			4 &#60title&#62dwlatino&#60/title&#62<br>
-			5&nbsp&#60base&nbspurl="/index.html"target="_blank"&#62<br>
-			6&nbsp&#60script&nbspsrc="js_dwlatino_general.js"&#62&nbsp&#60/script&#62<br><br>
-			7 <strong>&#60link&#62</strong><br><br>
-			8 &#60/head&#62<br><br>
-			9 &#60body&#62<br><br>
-			10 &#60/body&#62<br>
-			11 &#60/html&#62
+			&#60!DOCTYPE html&#62<br>
+			&#60html lang="es"&#62<br><br>
+			&#60head&#62<br>
+			&#60title&#62dwlatino&#60/title&#62<br>
+			url="/index.html"target="_blank"&#62<br>
+			&#60script&nbspsrc="js_dwlatino_general.js"&#62&nbsp&#60/script&#62<br><br>
+			<strong>&#60link&#62</strong><br><br>
+			&#60/head&#62<br><br>
+			&#60body&#62<br><br>
+			&#60/body&#62<br>
+			&#60/html&#62
 			</code>
-			<p>En el próximo ejemplo escribiré un link tag que tendrá 
-			como <abbr title="la palabra, frase o frases ubicadas a continuación del nombre del tag 
-			y separadas por un espacio en blanco">atributos</abbr> <b>"rel"</b> (el tipo de relación que 
+			<p>En el próximo ejemplo escribiré un tag de "link" que tendrá 
+			como atributos <b>"rel"</b> (el tipo de relación que 
 			nuestro documento guardará con el 
 			archivo referenciado) y <b>"href"</b> (el url del archivo).</p>
 			<code>
-			1 &#60!DOCTYPE html&#62<br>
-			2 &#60html lang="es"&#62<br><br>
-			3 &#60head&#62<br>
-			4 &#60title&#62dwlatino&#60/title&#62<br>
-			5&nbsp&#60base&nbspurl="/index.html"&nbsptarget="_blank"&#62<br>
-			6&nbsp&#60script&nbspsrc="js_dwlatino_general.js"&#62&nbsp&#60/script&#62<br><br>
-			7 <strong>&#60link rel="stylesheet"<br>
-			&#160&#160&#160href="estilos_dwlatino_html.css"&#62</strong><br><br>
-			8 &#60/head&#62<br><br>
-			9 &#60body&#62<br><br>
-			10 &#60/body&#62<br>
-			11 &#60/html&#62
+			&#60!DOCTYPE html&#62<br>
+			&#60html lang="es"&#62<br><br>
+			&#60head&#62<br>
+			&#60title&#62dwlatino&#60/title&#62<br>
+			&#60base&nbspurl="/index.html"&nbsptarget="_blank"&#62<br>
+			&#60script&nbspsrc="js_dwlatino_general.js"&#62&nbsp&#60/script&#62<br><br>
+			<strong>&#60link rel="stylesheet"<br>
+			href="estilos_dwlatino_html.css"&#62</strong><br><br>
+			&#60/head&#62<br><br>
+			&#60body&#62<br><br>
+			&#60/body&#62<br>
+			&#60/html&#62
 			</code>
 			<p>El atributo <b>"rel"</b> del ejemplo anterior indica que el 
 			archivo a que estamos haciendo referencia actuará como una 
 			hoja de estilos para nuestro documento html, y el atributo <b>"href"</b> 
 			indica la ubicación de la hoja de estilos.</p>
-			<p>Aprenderás más sobre los hipervínculos en html en nuestra sesión destinada 
-			a sendas de archivos.</p>
+			<p>Aprenderás más sobre los vínculos con otros documentos en nuestros 
+			cursos "Avanzando en HTML", "CSS desde cero" y "Javascript desde cero".</p>
 		</article>
 		
 		<article id="contenido_curso">
-		<h2>5. El "meta" tag</h2>
-			<p></p>
-			<code>
-			1 &#60!DOCTYPE html&#62<br>
-			2 &#60html lang="es"&#62<br><br>
-			3 &#60head&#62<br>
-			4 &#60title&#62dwlatino&#60/title&#62<br>
-			5&nbsp&#60base&nbspurl="/index.html"&nbsptarget="_blank"&#62
-			6&nbsp&#60script&nbspsrc="js_dwlatino_general.js"&#62&nbsp&#60/script&#62<br>
-			7&nbsp&#60link&nbsprel="stylesheet"&nbsphref="estilos_dwlatino_html.css"&#62<br><br>
-			8 <strong>&#60meta&#62</strong><br><br>
-			9 &#60/head&#62<br><br>
-			10 &#60body&#62<br><br>
-			11 &#60/body&#62<br>
-			12 &#60/html&#62
-			</code>
+		<h2>5. El tag "meta"</h2>
 			<p>El "meta" tag define información sobre el contenido de 
 			la página para asistir a navegadores y motores de búsqueda.</p>
-			<p>También podemos controlar parte del comportamiento de la página 
+			<code>
+			&#60!DOCTYPE html&#62<br>
+			&#60html lang="es"&#62<br><br>
+			&#60head&#62<br>
+			&#60title&#62dwlatino&#60/title&#62<br>
+			&#60base&nbspurl="/index.html"&nbsptarget="_blank"&#62
+			&#60script&nbspsrc="js_dwlatino_general.js"&#62&nbsp&#60/script&#62<br>
+			&#60link&nbsprel="stylesheet"&nbsphref="estilos_dwlatino_html.css"&#62<br><br>
+			<strong>&#60meta&#62</strong><br><br>
+			&#60/head&#62<br><br>
+			&#60body&#62<br><br>
+			&#60/body&#62<br>
+			&#60/html&#62
+			</code>
+			<p>Podemos controlar parte del comportamiento de la página 
 			a través de este tag.</p>
 			<p>En los "meta" tags podemos especificar la convención de caracteres 
 			que empleará nuestro documento, el nombre del autor, las palabras claves, 
@@ -238,37 +266,37 @@
 			mostrará la web en nuestro dispositivo.</p>
 			<p>A continuación te mostraré algunas de las más frecuentes</p>
 			<code>
-			1 &#60!DOCTYPE html&#62<br>
-			2 &#60html lang="es"&#62<br><br>
-			3 &#60head&#62<br>
-			4 &#60title&#62dwlatino&#60/title&#62<br>
-			5&nbsp&#60base&nbspurl="/index.html"&nbsptarget="_blank"&#62
-			6&nbsp&#60script&nbspsrc="js_dwlatino_general.js"&#62&nbsp&#60/script&#62<br>
-			7&nbsp&#60link&nbsprel="stylesheet"&nbsphref="estilos_dwlatino_html.css"&#62&nbsphref="estilos_dwlatino_html.css"&#62<br><br>
-			8 <strong>&#60meta<br>
-			&#160&#160&#160name="author"<br>
-			&#160&#160&#160content="Eduardo Osteicoechea"&#62</strong><br><br>
-			9 <strong>&#60meta<br>
-			&#160&#160&#160name="description"<br>
-			&#160&#160&#160content="Conoce los<br>
-			&#160&#160&#160componentes del "head" en html"&#62</strong><br><br>
-			10 <strong>&#60meta<br>
-			&#160&#160&#160name="keywords"<br>
-			&#160&#160&#160content="html, dwlatino,<br>
-			&#160&#160&#160cursos, programación"&#62</strong><br><br>
-			11 <strong>&#60meta<br>
-			&#160&#160&#160name="viewport"<br>
-			&#160&#160&#160content="width=device-width,<br>
-			&#160&#160&#160initial-scale=1.0"&#62</strong><br><br>
-			12 <strong>&#60meta<br>
-			&#160&#160&#160charset="UTF-8"&#62</strong><br><br>
-			13 <strong>&#60meta<br>
-			&#160&#160&#160http-equiv="X-UA-Compatible"<br>
-			&#160&#160&#160content="IE=edge"&#62</strong><br><br>
-			14 &#60/head&#62<br><br>
-			15 &#60body&#62<br><br>
-			16 &#60/body&#62<br>
-			17 &#60/html&#62
+			&#60!DOCTYPE html&#62<br>
+			&#60html lang="es"&#62<br><br>
+			&#60head&#62<br>
+			&#60title&#62dwlatino&#60/title&#62<br>
+			&#60base&nbspurl="/index.html"&nbsptarget="_blank"&#62
+			&#60script&nbspsrc="js_dwlatino_general.js"&#62&nbsp&#60/script&#62<br>
+			&#60link&nbsprel="stylesheet"&nbsphref="estilos_dwlatino_html.css"&#62&nbsphref="estilos_dwlatino_html.css"&#62<br><br>
+			<strong>&#60meta<br>
+			name="author"<br>
+			content="Eduardo Osteicoechea"&#62</strong><br><br>
+			<strong>&#60meta<br>
+			name="description"<br>
+			content="Conoce los<br>
+			componentes del "head" en html"&#62</strong><br><br>
+			<strong>&#60meta<br>
+			name="keywords"<br>
+			content="html, dwlatino,<br>
+			cursos, programación"&#62</strong><br><br>
+			<strong>&#60meta<br>
+			name="viewport"<br>
+			content="width=device-width,<br>
+			initial-scale=1.0"&#62</strong><br><br>
+			<strong>&#60meta<br>
+			charset="UTF-8"&#62</strong><br><br>
+			<strong>&#60meta<br>
+			http-equiv="X-UA-Compatible"<br>
+			content="IE=edge"&#62</strong><br><br>
+			&#60/head&#62<br><br>
+			&#60body&#62<br><br>
+			&#60/body&#62<br>
+			&#60/html&#62
 			</code>
 			<p>Las tres primeras meta tags que mostré son bastante 
 			explicativas. Indican el nombre del autor, una descripción del 
@@ -290,62 +318,60 @@
 		</article>
 		
 		<article id="contenido_curso_2">
-		<h2>6. El "style" tag</h2>
-			<p></p>
+		<h2>6. El tag "style"</h2>
+			<p>El tag "style" nos permite estilizar prácticamente cada elemento de nuestra 
+			página web utlizando CSS. Todo lo que escribamos dentro de este tag será CSS, 
+			no HTML.</p>
 			<code>
-			1 &#60!DOCTYPE html&#62<br>
-			2 &#60html lang="es"&#62<br><br>
-			3 &#60head&#62<br>
-			4 &#60title&#62dwlatino&#60/title&#62<br>
-			5&nbsp&#60base&nbspurl="/index.html"&nbsptarget="_blank"&#62
-			6&nbsp&#60script&nbspsrc="js_dwlatino_general.js"&#62&nbsp&#60/script&#62<br>
-			7&nbsp&#60link&nbsprel="stylesheet"&nbsphref="estilos_dwlatino_html.css"&#62&nbsphref="estilos_dwlatino_html.css"&#62<br>
-			8&nbsp&#60meta&nbspname="author"&nbspcontent="Eduardo&nbspOsteicoechea"&#62<br>
-			9&nbsp&#60meta&nbspname="description"&nbspcontent="Conoce&nbsplos&nbspcomponentes&nbspdel&nbsp"head"&nbspen&nbsphtml"&#62<br>
-			10&nbsp&#60meta&nbspname="keywords"&nbspcontent="html,&nbspdwlatino,&nbspcursos,&nbspprogramación"&#62</strong><br>
-			11&nbsp&#60meta&nbspname="viewport"&nbspcontent="width=device&#8209width,&nbspinitial&#8209scale=1.0"&#62<br>
-			12&nbsp&#60meta&nbspcharset="UTF&#8209&#56"&#62</strong><br>
-			13&nbsp&#60meta&nbsphttp&nbspequiv="X&#8209UA&#8209Compatible"&nbspcontent="IE=edge"&#62<br><br>
-			14 <strong>&#60style&#62&#60/style&#62</strong><br><br>
-			15 &#60/head&#62<br><br>
-			16 &#60body&#62<br><br>
-			17 &#60/body&#62<br>
-			18 &#60/html&#62
+			&#60!DOCTYPE html&#62<br>
+			&#60html lang="es"&#62<br><br>
+			&#60head&#62<br>
+			&#60title&#62dwlatino&#60/title&#62<br>
+			&#60base&nbspurl="/index.html"&nbsptarget="_blank"&#62
+			&#60script&nbspsrc="js_dwlatino_general.js"&#62&nbsp&#60/script&#62<br>
+			&#60link&nbsprel="stylesheet"&nbsphref="estilos_dwlatino_html.css"&#62&nbsphref="estilos_dwlatino_html.css"&#62<br>
+			&#60meta&nbspname="author"&nbspcontent="Eduardo&nbspOsteicoechea"&#62<br>
+			&#60meta&nbspname="description"&nbspcontent="Conoce&nbsplos&nbspcomponentes&nbspdel&nbsp"head"&nbspen&nbsphtml"&#62<br>
+			&#60meta&nbspname="keywords"&nbspcontent="html,&nbspdwlatino,&nbspcursos,&nbspprogramación"&#62</strong><br>
+			&#60meta&nbspname="viewport"&nbspcontent="width=device&#8209width,&nbspinitial&#8209scale=1.0"&#62<br>
+			&#60meta&nbspcharset="UTF&#8209&#56"&#62</strong><br>
+			&#60meta&nbsphttp&nbspequiv="X&#8209UA&#8209Compatible"&nbspcontent="IE=edge"&#62<br><br>
+			<strong>&#60style&#62&#60/style&#62</strong><br><br>
+			&#60/head&#62<br><br>
+			&#60body&#62<br><br>
+			&#60/body&#62<br>
+			&#60/html&#62
 			</code>
-			<p>El "style" tag le indica al documento tanto el tipo de código que 
-			empleará para formatear su contenido, como también 
-			el código mismo o la dirección de la hoja de estilos que se 
-			empleará para este fin.</p>
 			<p>No profundizaremos en este tag dentro de esta sesión porque dedicaremos 
 			una lección completa para ello.</p>
 		</article>
 		
 		<article id="contenido_curso">
 		<h2>Concluyendo</h2>
-			<code>
-			1 &nbsp&#60!DOCTYPE html&#62<br>
-			2 &nbsp&#60html lang="es"&#62<br><br>
-			3 &nbsp&#60head&#62<br>
-			4 &nbsp&#60title&#62dwlatino&#60/title&#62<br>
-			5&nbsp&nbsp&#60base&nbspurl="/index.html"&nbsptarget="_blank"&#62
-			6&nbsp&nbsp&#60script&nbspsrc="js_dwlatino_general.js"&#62&nbsp&#60/script&#62<br>
-			7&nbsp&nbsp&#60link&nbsprel="stylesheet"&nbsphref="estilos_dwlatino_html.css"&#62&nbsphref="estilos_dwlatino_html.css"&#62<br>
-			8&nbsp&nbsp&#60meta&nbspname="author"&nbspcontent="Eduardo&nbspOsteicoechea"&#62<br>
-			9&nbsp&nbsp&#60meta&nbspname="description"&nbspcontent="Conoce&nbsplos&nbspcomponentes&nbspdel&nbsp"head"&nbspen&nbsphtml"&#62<br>
-			10&nbsp&#60meta&nbspname="keywords"&nbspcontent="html,&nbspdwlatino,&nbspcursos,&nbspprogramación"&#62</strong><br>
-			11&nbsp&#60meta&nbspname="viewport"&nbspcontent="width=device&#8209width,&nbspinitial&#8209scale=1.0"&#62<br>
-			12&nbsp&#60meta&nbspcharset="UTF&#8209&#56"&#62</strong><br>
-			13&nbsp&#60meta&nbsphttp&nbspequiv="X&#8209UA&#8209Compatible"&nbspcontent="IE=edge"&#62<br>
-			14 &#60style&#62&#60/style&#62<br><br>
-			15 &#60/head&#62<br><br>
-			16 &#60body&#62<br><br>
-			17 &#60/body&#62<br>
-			18 &#60/html&#62
-			</code>
-			<p>El "head" tag contiene la información sobre la información de la 
+			<p>El "head" tag contiene información sobre la información de la 
 			página web. Sus tags indican el título, descripción, palabras clave, 
 			autor, estilos, punto referencial y scripts empleados por 
 			la página.</p>
+			<code>
+			&#60!DOCTYPE html&#62<br>
+			&#60html lang="es"&#62<br><br>
+			&#60head&#62<br>
+			&#60title&#62dwlatino&#60/title&#62<br>
+			base&nbspurl="/index.html"&nbsptarget="_blank"&#62
+			script&nbspsrc="js_dwlatino_general.js"&#62&nbsp&#60/script&#62<br>
+			&#60link&nbsprel="stylesheet"&nbsphref="estilos_dwlatino_html.css"&#62&nbsphref="estilos_dwlatino_html.css"&#62<br>
+			&#60meta&nbspname="author"&nbspcontent="Eduardo&nbspOsteicoechea"&#62<br>
+			&#60meta&nbspname="description"&nbspcontent="Conoce&nbsplos&nbspcomponentes&nbspdel&nbsp"head"&nbspen&nbsphtml"&#62<br>
+			&#60meta&nbspname="keywords"&nbspcontent="html,&nbspdwlatino,&nbspcursos,&nbspprogramación"&#62</strong><br>
+			&#60meta&nbspname="viewport"&nbspcontent="width=device&#8209width,&nbspinitial&#8209scale=1.0"&#62<br>
+			&#60meta&nbspcharset="UTF&#8209&#56"&#62</strong><br>
+			&#60meta&nbsphttp&nbspequiv="X&#8209UA&#8209Compatible"&nbspcontent="IE=edge"&#62<br>
+			&#60style&#62&#60/style&#62<br><br>
+			&#60/head&#62<br><br>
+			&#60body&#62<br><br>
+			&#60/body&#62<br>
+			&#60/html&#62
+			</code>
 			<p>Tanto el "head" como los tags contenidos dentro de él serán 
 			imperceptibles en la página.</p>
 			<p>Puedes utilizar seis tipos de tags dentro del "head":</p>

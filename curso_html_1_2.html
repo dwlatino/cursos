@@ -33,7 +33,7 @@
 		</section>
 		
 		<article id="contenido_curso">
-			<h1>Mis primeros elemtos en HTML</h1>
+			<h1>Mis primeros elementos en HTML</h1>
 			<p>Todo documento de HTML se construye con elementos llamados <strong>"tags"</strong> (etiquetas).</p>
 			<p>Un "tag" es un conjunto de símbolos predeterminados que le indican a los navegadores web y 
 			a los motores de búsqueda, cual es el contenido, función y apariencia del contenido visible de 
@@ -55,7 +55,7 @@
 			<ul>
 				<li>Símbolos de "mayor y menor que".</li>
 				<li>Nombre de tag.</li>
-				<li>Atributos del tag.</li>
+				<li>Atributos del tag (de ser necesario).</li>
 				<li>Información contenida entre los tags (en el caso de los tags contenedores).</li>
 			</ul>
 			<p>Para ilustrar esto comenzaremos a crear nuestra primera página web.</p>
@@ -76,7 +76,7 @@
 			y "menor que" <strong>("<")</strong> que define el final del primer tag y el inicio del segundo respectivamente.</p>	
 			<code>
 			1 &#60!DOCTYPE html&#62<br>
-			2 &#60html lang="es"&#62 <strong>...CONTENIDO...</strong> &#60/html&#62
+			2 &#60html lang="es"<strong>&#62...CONTENIDO...&#60</strong> /html&#62
 			</code>
 			<p>El nombre de los tag se ubica dentro de los símbolos de "mayor que" (">") 
 			y "menor que" ("<").</p>
@@ -84,7 +84,8 @@
 			1 &#60!DOCTYPE html&#62<br>
 			2 &#60<strong>html</strong>&#62 ... &#60/<strong>html</strong>&#62
 			</code>
-			<p>Los atributos de los tags siempre se ubican luego del nombre del tag y sólo dentro del primer tag 
+			<p>Los atributos de los tags siempre se ubican luego del nombre del tag, 
+			separados de éste por un espacio, y sólo dentro del primer tag 
 			en el caso de los tags contenedores.</p>
 			<code>
 			1 &#60!DOCTYPE html&#62<br>
@@ -92,7 +93,7 @@
 			</code>
 			<p>Profundizaremos en los atributos de los tag luego, pero por ahora 
 			será suficiente saber que éstos definen aspectos, valores, características e información 
-			específica de los tags que los contienen.</p>
+			específica sobre los tags que los contienen.</p>
 		</article>
 
 		<article id="contenido_curso">
