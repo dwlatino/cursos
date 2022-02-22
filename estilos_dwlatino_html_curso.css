@@ -136,8 +136,12 @@ color:var(--mm);}
 display:flex;
 flex-direction:column;
 align-items:center;
-padding:50px 25px;
+padding:25px 25px;
 gap:25px;}
+
+#contenido_curso h2,h3
+{max-width:var(--prgmxw);
+line-height:var(--prglnh);}
 
 #contenido_curso p
 {max-width:var(--prgmxw);
@@ -146,15 +150,21 @@ line-height:var(--prglnh);}
 #contenido_curso li
 {line-height:25px;}
 
+#contenido_curso dl
+{line-height:25px;
+max-width:var(--prgmxw);
+margin:0 0 0 25px;}
+
 #contenido_curso img
-{border-radius:10px;}
+{border-radius:10px;
+border:solid 2px var(--mm);}
 
 #contenido_curso_2
 {background:var(--bl);
 display:flex;
 flex-direction:column;
 align-items:center;
-padding:50px 25px;
+padding:25px 25px;
 gap:25px;}
 
 #contenido_curso_2 p
@@ -163,10 +173,18 @@ line-height:var(--prglnh);}
 
 #contenido_curso_2 li
 {line-height:25px;
-max-width:var(--prgmxw);}
+max-width:var(--prgmxw);
+margin:0 0 0 25px;}
+
+#contenido_curso_2 dl
+{line-height:25px;
+max-width:var(--prgmxw);
+margin:0 0 0 25px;}
 
 #contenido_curso_2 img
-{border-radius:10px;}
+{border-radius:10px;
+border:solid 2px var(--mm);}
+
 
 /* MEDIA QUERIES ---------------*/
 /* MEDIA QUERIES ---------------*/

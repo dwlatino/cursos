@@ -34,48 +34,58 @@
 		
 		<article id="contenido_curso">
 			<h1>4. Tu primer "body" en HTML</h1>
-			<p>El "body" es la parte que los navegadores muestran cuando 
-			el usuario accede a nuestra página.</p>
-						<code>
-			1 &nbsp&#60!DOCTYPE html&#62<br>
-			2 &nbsp&#60html lang="es"&#62<br><br>
-			3 &nbsp&#60head&#62<br>
-			4 &#60/head&#62<br><br>
-			5 <strong>&#60body&#62</strong><br><br>
-			6 <strong>&#60/body&#62</strong><br>
-			7 &#60/html&#62
+			<p>El "body" es la parte visible de nuestra página web.</p>
+			<code>
+				&#60!DOCTYPE html&#62<br>
+				&#60html lang="es"&#62<br><br>
+				&#60head&#62<br>
+				&#60/head&#62<br><br>
+				<strong>&#60body&#62</strong><br><br>
+				<strong>&#60/body&#62</strong><br>
+				&#60/html&#62
 			</code>
-			<p>Esta es la parte más extensa de nuestro documento html.</p>
-			<p>En esta sesión estudiaremos los elementos mas frencuentes del "body".</p>
+			<p>Ésta, casi siempre, será la parte más extensa de nuestro documento html.</p>
+			<p>Dentro de sus tags escribirás todos los tags que organizarán 
+			y estructurarán el contenido de la página.</p> 
+			<p>En esta sesión estudiaremos sus elementos mas frencuentes.</p>
 		</article>
 		
 		<article id="contenido_curso_2">
-			<h1>1. "Headings" ("&#60h1&#62&#60/h1&#62")</h1>
-			<p>Los encabezados definen el título y subtítulos de la información en tu página.</p>
+			<h1>1. Encabezados</h1>
+			<p>Los encabezados definen el título y subtítulos de la información de tu página.</p>
 			<p>Para crear un "heading" escribimos texto entre cualquiera de los 
 			siguientes tags</p>
 			<code>
-			<strong>&#60h1&#62&#60/h1&#62<br>
-			&#60h2&#62&#60/h2&#62<br>
-			&#60h3&#62&#60/h3&#62<br>
-			&#60h4&#62&#60/h4&#62<br>
-			&#60h5&#62&#60/h5&#62<br>
-			&#60h6&#62&#60/h6&#62</strong><br>
+				<strong>&#60h1&#62&#60/h1&#62<br>
+				&#60h2&#62&#60/h2&#62<br>
+				&#60h3&#62&#60/h3&#62<br>
+				&#60h4&#62&#60/h4&#62<br>
+				&#60h5&#62&#60/h5&#62<br>
+				&#60h6&#62&#60/h6&#62</strong>
 			</code>
 			<p>El número de los "headings" indica su nivel de importancia y son empleados 
 			no solo por los usuarios sino también por los motores de búsqueda.</p>
 			<p>Los buscadores indexan las páginas empleando la estructura 
-			que proveen los headings. Un "h1" indica que el texto contenido es un 
-			encabezado principal, mientras que un "h2" señala que es un encabezado de 
+			que proveen los headings.</p>
+			<p>Un "h1" indica que el texto contenido es un 
+			encabezado principal mientras que un "h2" señala que es un encabezado de 
 			menor importancia que el anterior y así consecuentemente.</p>
 			<p>Los "headings" modifican el grosor del texto y su tamaño para comunicar 
-			su importancia. Un "h4" será mucho más pequeño que un "h1". Debes cuidar 
-			de no usar los "headings" sólo para formatear tu texto, sino principalmente 
+			su importancia. Un "h4" será mucho más pequeño que un "h1".</p>
+			<p>Pero debes cuidar de no usar los "headings" sólo para formatear tu texto, 
+			sino principalmente 
 			para definir la estructura del documento o sección que presentas.</p>
+			<p>Emplear los encabezados solo para formatear tu contenido generará 
+			una estructura confusa a nivel de código en tu página web.</p>
 			<p>A continuación te mostraré el código de un par de headings y luego su 
 			presentación en el navegador web.</p>
 			<img src="img_curso_html_1_6.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
 			<img src="img_curso_html_1_7.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
+			<p>Puedes modificar prácticamente todos los aspectos de estilo de los 
+			encabezados en HTML5. Separación entre letras, entre palabras, interlineados, 
+			tamaño de fuente, peso, sombreado de texto, bordeado, y otros 
+			más con CSS, o con formateado local en HTML5. Hablaremos sobre 
+			esto en la quinta sesión.</p>
 		</article>
 		
 		<article id="contenido_curso">
@@ -84,19 +94,26 @@
 			definido. Creamos párrafos escribiendo texto entre los 
 			siguientes tags</p>
 			<code>
-			<strong>&#60p&#62&#60/p&#62</strong><br>
+				<strong>&#60p&#62&#60/p&#62</strong><br>
 			</code>
-			<p>Cada vez que comiences un nuevo párrafo, el navegador lo diferenciará 
+			<p>Cada vez que comiences un nuevo tag de párrafo, el navegador lo diferenciará 
 			del anterior empleando un formateado predeterminado o el que asignes luego.</p>
 			<p>A continuación te mostraré el código de algunos párrafos y luego su 
 			representación en el navegador web.</p>
 			<img src="img_curso_html_1_8.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
 			<img src="img_curso_html_1_9.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
+			<p>Como puedes notar en el ejemplo anterior, el formateado predeterminado 
+			de los párrafos, genera un espacio entre vertical entre el primer y el segundo 
+			párrafo.</p>
+			<p>Puedes modificar por completo el formateado de párrafos utilizando 
+			CSS o con atributos de estilizado local en los párrafos.</p>
 		</article>
 		
 		<article id="contenido_curso_2">
 			<h1>3. Listas</h1>
-			<p>Las listas organizan elementos relacionados dentro de un índice. 
+			<p>Las listas organizan elementos relacionados dentro de una 
+			pila (serie de elementos seriados en sentido vertical) 
+			que puede estar indexada visiblemente. 
 			Hay tres tipos de listas en html:</p>
 			<ol>
 				<li>Listas ordenadas.</li>
@@ -104,25 +121,55 @@
 				<li>Listas de descripción.</li>
 			</ol>
 			<p>La lista que acabas de leer fue escrita dentro del código 
-			de html para listas.</p>
-			<p>A continuación te mostraré el código de algunas listas y luego su representación en el 
+			de html para listas ordenadas.</p>
+			<p>Las <b>listas ordenadas</b> son aquellas indexadas con números naturales, 
+			o letras, o números romanos. Las listas <b>no ordenadas</b> son aquellas 
+			indezadas con círculos, discos, asteriscos u otro símbolo.</p>
+			<p>Las listas <b>de descripción</b> automáticamente colocan el 
+			término a definir hacia la izquiera del espacio disponible, y en la próxima línea 
+			ubican su definición luego de un sangrado de línea (el sangrado de línea 
+			es un espacio predeterminado antes del texto 
+			que indica el comienzo de una línea diferente o de un nuevo párrafo). 
+			Éste tipo de lista en HTML5 carece de símbolos precedentes al 
+			término por definir y a su definición.</p>
+			<p>A continuación te mostraré el código de las listas y luego su representación en el 
 			navegador.</p>
-			<img src="img_curso_html_1_10.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
+			<code>
+				<strong>&#60ol&#62<br>
+				&nbsp&#60li&#62 Ésta es una lista con indexado visible &#60/li&#62<br>
+				&#60/ol&#62</strong><br><br>
+				<strong>&#60ul&#62<br>
+				&nbsp&#60li&#62 Ésta es una lista sin indexado visible &#60/li&#62<br>
+				&#60/ul&#62</strong><br><br>
+				<strong>&#60dl&#62<br>
+				&nbsp&#60dt&#62 Ésta es una lista de descripción &#60/dt&#62<br>
+				&nbsp&nbsp&#60dd&#62 Aquí escribes la definición del término &#60/dd&#62<br>
+				&#60/dl&#62</strong><br>
+			</code>
 			<img src="img_curso_html_1_11.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
+			<p>Puedes formatear cada aspecto de las listas con CSS o con formateado 
+			local dentro del documento de html.</p>
 		</article>
 		
 		<article id="contenido_curso">
 			<h1>4. Comentarios</h1>
 			<p>Los comentarios permiten te escribir texto dentro del documento 
-			sin que éste se muestre en el navegador.</p>
+			sin que éste se muestre en el navegador. Creamos comentarios en HTML5
+			escribiento dentro de éstos símbolos.</p>
+			<code>
+				<strong>&#60!--&nbsp--&#62</strong>
+			</code>
 			<p>Los comentarios te permiten escribir recordatorios de aspectos importantes 
 			del documento o aclaratorias para otros desarrolladores 
 			que trabajen con tu documento.</p>
 			<p>A continuación te mostraré el código de un comentario y la manera en la que 
 			éste oculta el texto que contiene.</p>
-
 			<img src="img_curso_html_1_12.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
 			<img src="img_curso_html_1_13.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
+			<p>Los comentarios también te pueden ayudar a depurar tu código. Puedes identificar 
+			errores imperceptibles a primera vista, encerrando secciones de tu documento 
+			dentro de un comentario para ubicar las partes de tu código que contienen 
+			fallas.</p>
 		</article>
 		
 		<article id="contenido_curso_2">
@@ -132,44 +179,135 @@
 			página.</p>
 			<p>El código para escribir un link es éste:</p>
 			<code>
-			&#60a&nbsphref=" ... "&#62&#60/a&#62
+				<strong>&#60a&nbsphref=" ... "&#62&#60/a&#62</strong>
 			</code>
-			<p>Puedes encerrar otros tags dentro del tag de "link". Esto te permite 
+			<p>Puedes encerrar <b>tanto texto como otros tags dentro del 
+			tag de "link".</b> Esto te permite 
 			utilizar texto, imágenes, formas e incluso botones como "links".</p>
 			<p>De igual manera puedes escribir solo texto dentro del tag de "link". 
 			Esto hará que se muestre el texto en el formato predeterminado para 
-			los hipervínculos, o en el formatos que definas luego.</p>
-			<p>A continuación te mostraré el código para crear algunos links 
-			y luego la manera en la que muestran en el navegador.</p>
-			<img src="img_curso_html_1_14.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
-			<img src="img_curso_html_1_15.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
-		</article>
-		
-		<article id="contenido_curso_2">
-			<h1>5. Links</h1>
-			<p>Empleamos "links" para desplazarnos entre las páginas de 
-			un sitio web, para enviar correos, e incluso desplazarnos entre las secciones de una 
-			página.</p>
-			<p>El código para escribir un link es éste:</p>
+			los hipervínculos, o en el formato que definas luego.</p>
+			<p>Creamos un link escibiendo su tag y asigando la dirección a la que 
+			nos dirigiremos dentro del atributo "href" de esta manera:</p>
 			<code>
-			&#60a&nbsphref=" ... "&#62&#60/a&#62
+				<strong>&#60a&nbsphref="dwlatino.github.io/html/#curso_html"&#62&#60/a&#62</strong>
 			</code>
-			<p>Puedes encerrar otros tags dentro del tag de "link". Esto te permite 
-			utilizar texto, imágenes, formas e incluso botones como "links".</p>
-			<p>De igual manera puedes escribir solo texto dentro del tag de "link". 
-			Esto hará que se muestre el texto en el formato predeterminado para 
-			los hipervínculos, o en el formatos que definas luego.</p>
+			<p>Nota que la dirección fue escrita luego del asignador "=" y entre comillas.</p>
+			<p>Otro atributo esencial del link es <b>"target"</b>. Al hacer click sobre un 
+			link, éste se mostrará en la ventana actual de forma predeterminada. El atributo 
+			"target" nos permite cuatro alternativas para controlar la forma en la que 
+			se mostrará el contenido de la dirección a la que nos refiere el link.</p>
+			<dl>
+				<dt>_self</dt>
+					<dd>Muestra el contenido en la ventana actual del navegador. Esta es 
+					la opción predeterminada.</dd>
+				<dt>_blank</dt>
+					<dd>Muestra el contenido en otra pestaña dentro del navegador activo.</dd>
+				<dt>_parent</dt>
+					<dd>Muestra el contenido en la ventana activa del navegador.</dd>
+				<dt>_top</dt>
+					<dd>Ubica el inicio del documento referido en el tope de la página.</dd>
+			</dl>
 			<p>A continuación te mostraré el código para crear algunos links 
 			y luego la manera en la que muestran en el navegador.</p>
 			<img src="img_curso_html_1_14.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
 			<img src="img_curso_html_1_15.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
+			<p>Estudiaremos un poco más de los links en el próximo curso (Avanzando en 
+			HTML), cuando 
+			consideremos las sendas de archivos en HTML5.</p>
 		</article>
-		
 		
 		<article id="contenido_curso">
-		<h2>Concluyendo</h2>
-			
+			<h1>6. Quiebres de línea</h1>
+			<p>Los quiebres de línea te permiten separar ideas dentro de un 
+			mismo tag en html.</p>
+			<p>El código para escribir un quiebre de línea es éste:</p>
+			<code>
+				<strong>&#60br&#62</strong>
+			</code>
+			<p>Puedes colocar este tag en cualquier parte de un párrafo, o 
+			de una lista, o sección, y desplazará todo lo que esté a 
+			su derecha o abajo, hacia una nueva línea.</p>
+			<p>A continuación te mostraré un uso de éste tag y 
+			luego su visualización en el navegador.</p>
+			<img src="img_curso_html_1_14.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
+			<img src="img_curso_html_1_15.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
+			<p>Puedes formatear los quiebres de líneas con CSS o 
+			con estilizado local en HTML5. Puedes cambiar su color de fondo, altura,
+			crear bordes a su alrededor, asignarle sombras, etc.</p>
 		</article>
+		
+		<article id="contenido_curso_2">
+			<h1>7. Reglas horizontales</h1>
+			<p>Las reglas horizontales indican un cambio de sección en una 
+			página.</p>
+			<p>El tag de una regla horizontal es éste:</p>
+			<code>
+				<strong>&#60hr&#62</strong>
+			</code>
+			<p>A continuación te mostraré el código de una regla horizontal 
+			que separa dos secciones de contenido diferente y en la siguiente 
+			imagen te mostraré su visualización en el navegador.</p>
+			<img src="img_curso_html_1_14.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
+			<img src="img_curso_html_1_15.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
+			<p>Puedes formatear las reglas horizontales con CSS o con 
+			estilizado local en HTML. Ésto te permite modiciar su grosor, anchura, 
+			color, inclinación e incluso la redondez de sus extremos.</p>
+		</article>
+		
+		<article id="contenido_curso">
+			<h1>8. Multimedia</h1>
+			<p>Podemos insertar imágenes, audios, videos y secciones 
+			de otras páginas web dentro de nuestra página. 
+			Los tags para insertar multimedia son estos:</p>
+			<code>
+				<strong>&#60img&#62<br>
+				&#60audio&#62&#60/audio&#62<br>
+				&#60video&#62&#60/video&#62<br>
+				&#60iframe&#62&#60/iframe&#62</strong><br>
+			</code>
+			<p>Por ahora nos enfocaremos en las imágenes dentro de 
+			HTML. Aprenderemos más sobre los demás medio audiovisuales en 
+			nuestro próximo curso "avanzando en html".</p>
+			
+			<p>El tag de imágenes es "vacío", es decir, es un tag autocontenido 
+			en html.</p>
+			
+			<p>Insertamos imágenes especificando el URL de la imagen dentro del 
+			atributo "src" que colocamos dentro del tag "img".</p>
+			
+			<p>El tag para insertar imágenes también soporta el atributo "alt", que 
+			es una descripción del contenido de la imagen que se mostrará en 
+			caso de que la imagen no se cargue correctamente.</p>
+			
+			<p>A continuación te mostraré el código para insertar una imagen y luego 
+			su visualización en el navegador.</p>
+			
+			<img src="img_curso_html_1_14.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
+			<img src="img_curso_html_1_15.png" alt="guardando el primer archivo de HTML" style="max-width:300px"" >
+			
+			<p>Puedes modificar la proporción de aspecto, la cobertura, el tamaño en 
+			bits, y otras propiedades de la imagen a traves de CSS o de formateado 
+			local en HTML5.</p>
+			
+			<p>Definir el tamaño de tu imagen será importante para controlar su 
+			visualización detro de tu página web.</p>
+		</article>
+		
+		
+		<article id="contenido_curso_2">
+		<h2>Concluyendo</h2>
+		<p>Hasta ahora hemos visto los elementos más básicos y frecuentes 
+		dentro de un "body" de html. 
+		Con estos elementos puedes plasmar el contenido básico de tu 
+		página web.</p>
+		<p>Pero de seguro habrás notado que nuestra web no luce muy atractiva en 
+		este punto.</p>
+		<p>No te preocupes por esto, 
+		en la próxima sesión realizarás tu primer formateado de éstos elementos 
+		utilizando tanto CSS como estilizado local en HTML5.</p>
+		</article>
+		<hr>
 
 		<section id="navegacion_secundaria_curso_1">
 			<!--CONTENIDO INSERTADO A TRAVES DE SCRIPT EN HEAD-->

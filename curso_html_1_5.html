@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device.width, initial-scale=1.0">
+		<meta name="author" content="Eduardo Osteicoechea">
+		<meta name="description" content="Aprende HTML desde cero">
+		<link rel="stylesheet" href="estilos_dwlatino_html.css">
+		<title>Mi primer formateado en HTML</title>
+		<script src="js_dwlatino_general.js" defer></script>
+		<meta name="theme-color" content="#303">
+		<link rel="shortcut icon" type="image/svg" href="img_icono.svg">
+		<link rel="stylesheet" href="estilos_dwlatino_html_curso.css">
+		<script src="js_dwlatino_cursos.js" defer></script>
+	</head>
+
+	<body>
+	
+		<header id="cabecera">
+			<!--CONTENIDO INSERTADO A TRAVES DE SCRIPT EN HEAD-->
+		</header>
+		<header id="navegacion_movil">
+			<!--CONTENIDO INSERTADO A TRAVES DE SCRIPT EN HEAD-->
+		</header>
+
+		<section id="portada_curso_1">
+			<!--CONTENIDO INSERTADO A TRAVES DE SCRIPT EN HEAD-->
+		</section>
+		
+		<section id="navegacion_curso_1">
+			<!--CONTENIDO INSERTADO A TRAVES DE SCRIPT EN HEAD-->
+		</section>
+		
+		<article id="contenido_curso">
+			<h1>5. Tu primer formateado en HTML</h1>
+			<p>El <b>formateado</b> en HTML es la modificación de la apariencia de 
+			nuestra web. HTML nos permite estilizar prácticamente TODO ELEMENTO 
+			de nuestra página web.</p>			 
+			<p>En esta sesión estudiaremos dos aproximaciones al estilizado 
+			de nuestra página web y comenzaremos a mejorar la apariencia de 
+			nuestro primer html.</p>
+		</article>
+		
+		
+		<article id="contenido_curso_2">
+			<h1>Estilizado local en HTML</h1>
+			<p>El primer enfoque que adoptaremos para estilizar nuestro documento sera 
+			el formateado local.</p>
+			<p>El <b>formateado local</b> consiste en modificar el estilo de un elemento o 
+			de una sección de un elemento mediante un atributo permitido en los 
+			tags de html.</p>
+			<p>Practicamente todo tag en html nos permite incorporar el 
+			atributo <b>"style"</b> dentro de sí, con el cual podemos indicar 
+			propiedades de estilo.</p>
+			<p>A continuación te mostraré un ejemplo de ello:</p>
+			<code>
+				&#60p&nbsp<strong>style="color:red"&#62El&nbspcolor&nbsp
+				de&nbspeste&nbsppárrafo&nbspserá&nbspcambiado&nbspa&nbsprojo</strong>&#62&#60/p&#62
+			</code>
+			<p>Ahora mira la visualización de éste párrafo en esta misma pagina:</p>
+			<p style="color:red">El color de este párrafo será cambiado a rojo</p>
+			<p>Puedes añadir cuantas propiedades desees siempre y cuando las 
+			escribas correctamente y las separes colocando un punto y coma al terminar 
+			una propiedad, seguido de un espacio antes de escribir la nueva propiedad.</p>
+			<code>
+				&#60p&nbsp<strong>style="color:red";&nbspfont&#45family:arial;&nbspfont&#45size:30px;&nbspletter&#45spacing:-2px"</strong>&#62El&nbspcolor&nbsp
+				de&nbspeste&nbsppárrafo&nbspserá&nbspcambiado&nbspa&nbsprojo&#60/p&#62
+			</code>
+			<p>A continuación te muestro la visualización del código anterior 
+			dentro de esta misma página:</p>
+			<p style="color:red; font-family:arial; font-size:30px; letter-spacing:-2px">El 
+			color de este párrafo será cambiado a rojo</p>
+			<p>Debes recordar que <b>la última propiedad que modifiques no debe concluir 
+			con punto y coma</b>, sino solo con el segundo par de comillas que limitan el contenido del atributo "style".</p>
+			<p><b>Las propiedades que modificarás son propiedades de CSS</b>, por lo que 
+			debes conocerlas para escribirlas y modificarlas correctamente.</p>
+			<p>Aprenderás sobres las propiedades y valores de CSS en nuestro curso 
+			"CSS desde cero". Por ahora te indicaré qué propiedades emplear y cuál es 
+			el tipo de valores que éstas requieren para que puedas manipularlas por 
+			tu cuenta.</p>
+			<p>Ahora procederemos a nuestro segundo enfoque de estilizado, donde 
+			consideraremos las mismas propiedades de CSS pero desde una metodología 
+			distinta.</p>
+		</article>
+		
+		<article id="contenido_curso">
+			<h2>Estilizado en "head"</h2>
+			<p>Lo primero que necesitamos conocer para estilizar nuestro documento desde 
+			el "head" es el tag "style".</p>
+			<code>
+				&#60head&#62<br>
+				<strong>&#60style&#62&#60/style&#62</strong><br>
+				&#60/head&#62
+			</code>
+			<p>Colocamos este tag en el "head" del documento, y dentro de éste escribimos 
+			identificadores, propiedades y valores que definen el estilizado 
+			de los elementos de html.</p>
+			<code>
+				&#60head&#62<br>
+				<strong>&#60style&#62<br><br>
+				p<br>
+				{color:red;<br>
+				font-size:16px;}<br><br>
+				h1<br>
+				{color:blue;<br>
+				font-size:32px;}<br><br>
+				&#60/style&#62</strong><br>
+				&#60/head&#62
+			</code>
+			<p>CSS es el lenguaje predeterminado para estilizar las páginas web. Todo 
+			lo que escribas dentro del tag "style" en el head, o dentro del atributo "style" en 
+			los elementos del "body" será interpretado como CSS.
+			A continuación consideraremos de forma general cada uno de sus elementos</p>
+		</article>
+		
+		<article id="contenido_curso_2">
+			<h2>Identificadores y ámbitos</h2>
+			<p>Lo siguiente que necesitamos conocer para estilizar nuestro documento desde 
+			el "head" son los identificadores, propiedades y valores de CSS.</p>
+			<p>Recuerda esto, una vez escribimos dentro del tag "style" o dentro del 
+			atributo "style", 
+			estaremos codificando en el lenguaje CSS.</p>
+			<p>Un <b>identificador</b> es un símbolo que coincide con el tag de html que 
+			deseamos modificar	 o que equivale a éste.</p>
+			<code>
+				&#60head&#62<br>
+				&#60style&#62<br><br>
+				<strong>p<br></strong>
+				{color:red;<br>
+				font-size:16px;}<br><br>
+				<strong>h1<br></strong>
+				{color:blue;<br>
+				font-size:32px;}<br><br>
+				<strong>#párrafo_especial<br></strong>
+				{color:green;<br>
+				font-size:24px;}<br><br>
+				<strong>.sección_especial<br></strong>
+				{color:brown;<br>
+				font-size:24px;}<br><br>
+				&#60/style&#62<br>
+				&#60/head&#62
+			</code>
+			<p>Los <b>identificadores que coinciden</b> 
+			con el tag son "p" para párrafo, "h1" para headings, "ol" para listas 
+			ordenadas, y así consecuentemente. Éstos identificadores poseen el nombre exacto 
+			del tag en html.</p>
+			<code>
+				&#60head&#62<br>
+				&#60style&#62<br><br>
+				<strong>p<br></strong>
+				{color:red;<br>
+				font-size:16px;}<br><br>
+				<strong>h1<br></strong>
+				{color:blue;<br>
+				font-size:32px;}<br><br>
+				#párrafo_especial<br>
+				{color:green;<br>
+				font-size:24px;}<br><br>
+				.sección_especial<br>
+				{color:brown;<br>
+				font-size:24px;}<br><br>
+				&#60/style&#62<br>
+				&#60/head&#62
+			</code>
+			<p>Los <b>identificadores equivalentes</b> son 
+			sólo dos: "." para clases, y "#" para identidades. 
+			En el caso de los identificadores equivalentes debemos escribir el símbolo 
+			equivalente, seguido del nombre exacto que asignamos al elemento en 
+			html.</p>
+			<code>
+				&#60head&#62<br>
+				&#60style&#62<br><br>
+				p<br>
+				{color:red;<br>
+				font-size:16px;}<br><br>
+				h1<br>
+				{color:blue;<br>
+				font-size:32px;}<br><br>
+				<strong>#párrafo_especial<br></strong>
+				{color:green;<br>
+				font-size:24px;}<br><br>
+				<strong>.sección_especial<br></strong>
+				{color:brown;<br>
+				font-size:24px;}<br><br>
+				&#60/style&#62<br>
+				&#60/head&#62
+			</code>
+			<p>Otro concepto fundamental sobre estos identificadores es el <b>ámbito</b> 
+			que definimos a través de llaves <b>("{}")</b>.</p>
+			<code>
+				&#60head&#62<br>
+				&#60style&#62<br><br>
+				p<br>
+				<strong>{color:red;<br>
+				font-size:16px;}</strong><br><br>
+				#párrafo_especial<br>
+				<strong>{color:green;<br>
+				font-size:24px;}</strong><br><br>
+				&#60/style&#62<br>
+				&#60/head&#62
+			</code>
+			<p>El ámbito es el conjunto de valores y propiedades de un identificador 
+			que siempre es delimitado por llaves.</p>
+			<p>luego de escribir un identificador en el tag de "style", debemos tipear 
+			un par de llaves dentro de las que escribiremos todas las propiedades y valores 
+			que modificaremos.</p>
+			<p>Cada identificador debe tener un par de llaves que definen dónde comienza 
+			y dónde termina el ámbito sus propiedades que serán modificadas.</p>
+		</article>
+			
+		<article id="contenido_curso">
+			<h2>Propiedades y valores</h2>
+			<p>Las <b>propiedades</b> son las características de los elementos en 
+			html que deseamos 
+			modificar. Tamaño de fuente, espaciado de letras, color, fondo, son propiedades.</p>
+			<code>
+				&#60head&#62<br>
+				&#60style&#62<br><br>
+				p<br>
+				{<strong>color</strong>:red;<br>
+				<strong>font-size</strong>:16px;}<br><br>
+				#párrafo_especial<br>
+				{<strong>color</strong>:green;<br>
+				<strong>font-size</strong>:24px;}<br><br>
+				&#60/style&#62<br>
+				&#60/head&#62
+			</code>
+			<p>Los <b>valores</b> son el parametro exacto de la propiedad que modificamos. 
+			Si por ejemplo, nuestra propiedad es tamaño de fuente, el valor es 16 píxeles.</p>
+			<code>
+				&#60head&#62<br>
+				&#60style&#62<br><br>
+				p<br>
+				{color:<strong>red</strong>;<br>
+				font-size:<strong>16px</strong>;}<br><br>
+				#párrafo_especial<br>
+				{color:<strong>green</strong>;<br>
+				font-size:<strong>24px</strong>;}<br><br>
+				&#60/style&#62<br>
+				&#60/head&#62
+			</code>
+			<p>Siempre declaramos las propiedades dentro de las llaves que 
+			definen el ámbito de un identificador, seguido de dos puntos ":" y luego 
+			escribimos el valor.</p>
+			<code>
+				&#60head&#62<br>
+				&#60style&#62<br><br>
+				p<br>
+				{color<strong>:</strong>red;<br>
+				font-size<strong>:</strong>16px;}<br><br>
+				#párrafo_especial<br>
+				{color<strong>:</strong>green;<br>
+				font-size<strong>:</strong>24px;}<br><br>
+				&#60/style&#62<br>
+				&#60/head&#62
+			</code>
+			<p>Puedes modificar todas las propiedades que CSS te permita (¡eso es muchísimo!), 
+			dentro del ámbito de cada identificador. Pero es importante que recuerdes 
+			que debes separa una propiedad de otra con un punto y coma (";"), seguido de 
+			un espacio.</p>
+			<code>
+				&#60head&#62<br>
+				&#60style&#62<br><br>
+				p<br>
+				{color:red<strong>;</strong><br>
+				font-size:16px<strong>;</strong>}<br><br>
+				#párrafo_especial<br>
+				{color:green<strong>;</strong><br>
+				font-size:24px<strong>;</strong>}<br><br>
+				&#60/style&#62<br>
+				&#60/head&#62
+			</code>
+			<p>Una buena práctica ubicar una sola propiedad en cada línea. 
+			Siempre y cuando termines cada propiedad con un punto y coma, podras 
+			ubicarlas en líneas diferentes dentro del ámbito del identificador.</p>
+		</article>
+		
+		
+		<article id="contenido_curso_2">
+			<h2>Concluyendo</h2>
+			<p>Este par de enfoques te permite modificar cada elemento del html de acuerdo 
+			a tu preferencia.</p>
+			<p>El tag "style" en el "head", y el atributo "style" dentro de los elementos de html 
+			brindan oportunidades de personalización increíblemente amplias.</p>
+			<p>Desde luego, la forma ideal de estilizar tu página web es emplear un 
+			documento externo de CSS vinculado a tus documentos de html. Estudiaremos 
+			cómo hacer esto en nuestro curso "CSS desde cero".</p>
+			<p>En nuestra próxima sesión comenzaremos a construir una web con html 
+			y aplicaremos los principios de formateado que hemos visto.</p>
+		</article>
+		<hr>
+		
+
+		<section id="navegacion_secundaria_curso_1">
+			<!--CONTENIDO INSERTADO A TRAVES DE SCRIPT EN HEAD-->
+		</section>
+		
+		<footer id="pie_de_pagina">
+			<!--CONTENIDO INSERTADO A TRAVES DE SCRIPT EN HEAD-->
+		</footer>
+
+	</body>
+</html>
