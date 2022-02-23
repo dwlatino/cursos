@@ -121,8 +121,10 @@ border-radius:var(--btnr);
 background:var(--am);
 border:none;
 color:var(--ne);
-font-size:var(--prg);
-font-weight:var(--prgw);}
+font-size:var(--prg);}
+
+#portada_index a
+{font-weight:900;}
 
 /* BIO --------------------------------------------*/
 /* BIO --------------------------------------------*/
@@ -261,7 +263,7 @@ font-weight:var(--prgstg);}
 #cabecera
 {display:flex;
 flex-wrap:wrap;
-background:#707;
+background:var(--mm);
 align-items:center;
 justify-content;}
 

@@ -30,7 +30,7 @@ navegacionSecundariaCurso1.innerHTML =
 const portadaCurso1 = document.getElementById("portada_curso_1");
 portadaCurso1.innerHTML =
 `
-<img src="img_html5_logo_seeklogo.com.svg" alt="logo de html5" style="max-width:250px">
+<img src="img_html5_logo_seeklogo.com.svg" alt="logo de html5" style="max-width:225px">
 <h1>HTML<br> el lenguaje de construcción de la web.</h1>
 <a href="#contenido_curso">
 	<button>comenzar</button>
