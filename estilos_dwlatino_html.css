@@ -217,8 +217,12 @@ line-height:var(--prglnh);}
 
 #pie_de_pagina a
 {text-decoration:none;
-color:var(--mc);
+color:var(--bl);
 font-weight:var(--prgstg);}
+
+#pie_de_pagina li
+{color:var(--bl);
+line-height:2rem;}
 
 #pie_de_pagina img
 {border-radius:500px;}
@@ -294,13 +298,15 @@ font-weight:900;}
 #navegacion_principal li
 {display:inline;}
 
+/* NAVEGACIÓN MÓVIL-----------------------------*/
+
 #navegacion_movil
 {display:none;
 padding: 0 0 0 0;}
 
 #navegacion_movil li
 {color:var(--mc);
-list-style-tipe:none;
+list-style-type:none;
 margin: 0 0 0 0;
 padding:12.5px 25px 12.5px 25px;
 font-weight:900;
@@ -342,7 +348,7 @@ margin:0 25px 0 0;}
 {display:flex;
 flex-direction:column;
 align-items:center;
-padding: 0px 0px 50px 0;
+padding: 0px 0px 35px 0;
 gap:25px;
 color:var(--bl);}
 
@@ -380,7 +386,7 @@ font-weight:var(--prgw);}
 display:flex;
 flex-direction:column;
 align-items:center;
-padding:50px 25px;
+padding:35px 25px;
 gap:25px;}
 
 #bio p
@@ -397,12 +403,21 @@ color:var(--bl);
 font-size:var(--prg);
 font-weight:var(--prgw);}
 
+/* CURSO --------------------------------------------*/
+/* CURSO --------------------------------------------*/
+/* CURSO --------------------------------------------*/
+/* CURSO --------------------------------------------*/
+/* CURSO --------------------------------------------*/
+/* CURSO --------------------------------------------*/
+/* CURSO --------------------------------------------*/
+/* CURSO --------------------------------------------*/
+
 #curso_1_index
 {background:var(--am);
 display:flex;
 flex-direction:column;
 align-items:center;
-padding:50px 25px;
+padding:35px 25px;
 gap:25px;}
 
 #curso_1_index p
@@ -424,7 +439,7 @@ font-weight:var(--prgw);}
 display:flex;
 flex-direction:column;
 align-items:center;
-padding:50px 25px;
+padding:35px 25px;
 gap:25px;}
 
 #curso_2_index p
@@ -455,13 +470,12 @@ font-weight:var(--prgw);}
 display:flex;
 flex-direction:column;
 align-items:center;
-padding:50px 25px;
+padding:35px 25px;
 gap:25px;
 color:var(--bl);}
 
 #pie_de_pagina h2
 {font-size:2rem;}
-
 
 #pie_de_pagina p
 {max-width:var(--prgmxw);
@@ -479,7 +493,8 @@ margin: 0 auto 0 0;
 list-style-type:none;}
 
 #pie_de_pagina li
-{line-height:2rem;}
+{line-height:2rem;
+margin: 0 auto 0 0;}
 
 #pie_de_pagina img
 {border-radius:500px;}
