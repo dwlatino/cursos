@@ -5,6 +5,7 @@ navegacionCurso1.innerHTML =
 `
 <h1>Menú de curso</h1>
 	<ul>
+		<a href="curso_html_1_0.html"><li>0. Introducción al curso</li></a>
 		<a href="curso_html_1_1.html"><li>1. Tu primer documento HTML</li></a>
 		<a href="curso_html_1_2.html"><li>2. Tus primeros elementos en HTML</li></a>
 		<a href="curso_html_1_3.html"><li>3. Tu primer "head" en HTML</li></a>
@@ -18,6 +19,7 @@ navegacionSecundariaCurso1.innerHTML =
 `
 <h1>Menú de curso</h1>
 	<ul>
+		<a href="curso_html_1_0.html"><li>0. Introducción al curso</li></a>
 		<a href="curso_html_1_1.html"><li>1. Tu primer documento HTML</li></a>
 		<a href="curso_html_1_2.html"><li>2. Tus primeros elementos en HTML</li></a>
 		<a href="curso_html_1_3.html"><li>3. Tu primer "head" en HTML</li></a>

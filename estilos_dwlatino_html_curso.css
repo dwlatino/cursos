@@ -94,8 +94,8 @@ display:flex;
 color:var(--ne);
 flex-direction:column;
 align-items:center;
-padding:50px 25px;
-gap:25px;}
+padding:32.5px 32.5px 35px 32.5px;
+gap:0px;}
 
 #navegacion_curso_1 li
 {margin:25px 0 0 0;}
@@ -112,8 +112,8 @@ display:flex;
 color:var(--ne);
 flex-direction:column;
 align-items:center;
-padding:50px 25px;
-gap:25px;}
+padding:35px 25px 35px 25px;
+gap:0px;}
 
 #navegacion_secundaria_curso_1 li
 {margin:25px 0 0 0;}
