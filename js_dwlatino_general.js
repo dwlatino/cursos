@@ -50,7 +50,7 @@ botonMenuCabecera.addEventListener('click', function() {
 
 contenidoPieDePagina.innerHTML =
 `
-<h2 id="cursos_pie_de_pagina">CURSOS</h2>
+<h3 id="cursos_pie_de_pagina">CURSOS</h3>
 <a href="curso_html_1_0.html">
 	<p>1. Tu primer HTML</p>
 </a>
@@ -66,7 +66,7 @@ contenidoPieDePagina.innerHTML =
 <hr>
 <br>	
 
-<h2 id="contacto_pie_de_pagina">CONTACTO</h2>
+<h3 id="contacto_pie_de_pagina">CONTACTO</h3>
 <ul>
 <li><b>Correo:</b> dwlatino.ven@gmail.com</li>
 <li><b>Teléfono:</b> +58 0414 728 1033</li>
