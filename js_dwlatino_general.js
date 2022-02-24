@@ -51,7 +51,7 @@ botonMenuCabecera.addEventListener('click', function() {
 contenidoPieDePagina.innerHTML =
 `
 <h2 id="cursos_pie_de_pagina">CURSOS</h2>
-<a href="curso_html_1_1.html">
+<a href="curso_html_1_0.html">
 	<p>1. Tu primer HTML</p>
 </a>
 <a href="#">
@@ -59,13 +59,18 @@ contenidoPieDePagina.innerHTML =
 </a>
 <br>
 
+
 <img src="img_foto_personal.png" alt="foto personal" style="max-width:250px">
 <p>Me apasiona aprender y guiar a otros. Puedo impulsarte en tu proyecto de convertirte en un front-end developer.</p>
 <p>Contáctame a través de la información que encontrarás más abajo.</p>
+<hr>
+<br>	
 
 <h2 id="contacto_pie_de_pagina">CONTACTO</h2>
-<p>Correo: dwlatino.ven@gmail.com</p>
-<p>Teléfono: +58 0414 728 1033</p>
-<p>Whatsapp: +58 0414 728 1033</p>
-<p>GitHub: dwlatino</p>
+<ul>
+<li><b>Correo:</b> dwlatino.ven@gmail.com</li>
+<li><b>Teléfono:</b> +58 0414 728 1033</li>
+<li><b>Whatsapp:</b> +58 0414 728 1033</li>
+<li><b>GitHub:</b> dwlatino</li>
+</ul>
 `

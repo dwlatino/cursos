@@ -31,6 +31,7 @@
 		<section id="navegacion_curso_1">
 			<!--CONTENIDO INSERTADO A TRAVES DE SCRIPT EN HEAD-->
 		</section>
+		<hr>
 		
 		<article id="contenido_curso">
 			<h1>5. Tu primer formateado en HTML</h1>
@@ -41,11 +42,12 @@
 			de nuestra página web y comenzaremos a mejorar la apariencia de 
 			nuestro primer html.</p>
 		</article>
+		<hr>
 		
 		
 		<article id="contenido_curso_2">
 			<h1>Estilizado local en HTML</h1>
-			<p>El primer enfoque que adoptaremos para estilizar nuestro documento sera 
+			<p>El primer enfoque que adoptaremos sera 
 			el formateado local.</p>
 			<p>El <b>formateado local</b> consiste en modificar el estilo de un elemento o 
 			de una sección de un elemento mediante un atributo permitido en los 
@@ -55,20 +57,19 @@
 			propiedades de estilo.</p>
 			<p>A continuación te mostraré un ejemplo de ello:</p>
 			<code>
-				&#60p&nbsp<strong>style="color:red"&#62El&nbspcolor&nbsp
-				de&nbspeste&nbsppárrafo&nbspserá&nbspcambiado&nbspa&nbsprojo</strong>&#62&#60/p&#62
+				&#60p&nbsp<strong>style="color:red"</strong>&#62El&nbspcolor&nbsp
+				de&nbspeste&nbsppárrafo&nbspserá&nbspcambiado&nbspa&nbsprojo&#62&#60/p&#62
 			</code>
-			<p>Ahora mira la visualización de éste párrafo en esta misma pagina:</p>
+			<p>Esta es la visualización de éste código:</p>
 			<p style="color:red">El color de este párrafo será cambiado a rojo</p>
 			<p>Puedes añadir cuantas propiedades desees siempre y cuando las 
 			escribas correctamente y las separes colocando un punto y coma al terminar 
-			una propiedad, seguido de un espacio antes de escribir la nueva propiedad.</p>
+			una propiedad.</p>
 			<code>
 				&#60p&nbsp<strong>style="color:red";&nbspfont&#45family:arial;&nbspfont&#45size:30px;&nbspletter&#45spacing:-2px"</strong>&#62El&nbspcolor&nbsp
 				de&nbspeste&nbsppárrafo&nbspserá&nbspcambiado&nbspa&nbsprojo&#60/p&#62
 			</code>
-			<p>A continuación te muestro la visualización del código anterior 
-			dentro de esta misma página:</p>
+			<p>A continuación te muestro la visualización del código anterior:</p>
 			<p style="color:red; font-family:arial; font-size:30px; letter-spacing:-2px">El 
 			color de este párrafo será cambiado a rojo</p>
 			<p>Debes recordar que <b>la última propiedad que modifiques no debe concluir 
@@ -83,6 +84,7 @@
 			consideraremos las mismas propiedades de CSS pero desde una metodología 
 			distinta.</p>
 		</article>
+		<hr>
 		
 		<article id="contenido_curso">
 			<h2>Estilizado en "head"</h2>
@@ -113,6 +115,7 @@
 			los elementos del "body" será interpretado como CSS.
 			A continuación consideraremos de forma general cada uno de sus elementos</p>
 		</article>
+		<hr>
 		
 		<article id="contenido_curso_2">
 			<h2>Identificadores y ámbitos</h2>
@@ -164,7 +167,7 @@
 				&#60/head&#62
 			</code>
 			<p>Los <b>identificadores equivalentes</b> son 
-			sólo dos: "." para clases, y "#" para identidades. 
+			sólo dos: "<b>.</b>" para clases, y "<b>#</b>" para identidades. 
 			En el caso de los identificadores equivalentes debemos escribir el símbolo 
 			equivalente, seguido del nombre exacto que asignamos al elemento en 
 			html.</p>
@@ -206,8 +209,9 @@
 			un par de llaves dentro de las que escribiremos todas las propiedades y valores 
 			que modificaremos.</p>
 			<p>Cada identificador debe tener un par de llaves que definen dónde comienza 
-			y dónde termina el ámbito sus propiedades que serán modificadas.</p>
+			y dónde termina el ámbito de sus propiedades que serán modificadas.</p>
 		</article>
+		<hr>
 			
 		<article id="contenido_curso">
 			<h2>Propiedades y valores</h2>
@@ -240,9 +244,8 @@
 				&#60/style&#62<br>
 				&#60/head&#62
 			</code>
-			<p>Siempre declaramos las propiedades dentro de las llaves que 
-			definen el ámbito de un identificador, seguido de dos puntos ":" y luego 
-			escribimos el valor.</p>
+			<p>Debemos declarar las propiedades seguidas de dos puntos "<b>:</b>" y luego 
+			su valor.</p>
 			<code>
 				&#60head&#62<br>
 				&#60style&#62<br><br>
@@ -274,7 +277,10 @@
 			<p>Una buena práctica ubicar una sola propiedad en cada línea. 
 			Siempre y cuando termines cada propiedad con un punto y coma, podras 
 			ubicarlas en líneas diferentes dentro del ámbito del identificador.</p>
+			<p>Todas las propiedades que no modifiques mantendrán el 
+			valor predeterminado que le asigna HTML.</p>
 		</article>
+		<hr>
 		
 		
 		<article id="contenido_curso_2">

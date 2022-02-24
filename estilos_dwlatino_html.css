@@ -441,6 +441,15 @@ color:var(--bl);
 font-size:var(--prg);
 font-weight:var(--prgw);}
 
+/* BIO --------------------------------------------*/
+/* BIO --------------------------------------------*/
+/* BIO --------------------------------------------*/
+/* BIO --------------------------------------------*/
+/* BIO --------------------------------------------*/
+/* BIO --------------------------------------------*/
+/* BIO --------------------------------------------*/
+/* BIO --------------------------------------------*/
+
 #pie_de_pagina
 {background:var(--mo);
 display:flex;
@@ -450,6 +459,10 @@ padding:50px 25px;
 gap:25px;
 color:var(--bl);}
 
+#pie_de_pagina h2
+{font-size:2rem;}
+
+
 #pie_de_pagina p
 {max-width:var(--prgmxw);
 line-height:var(--prglnh);}
@@ -457,7 +470,16 @@ line-height:var(--prglnh);}
 #pie_de_pagina a
 {text-decoration:none;
 color:var(--bl);
-font-weight:var(--prgstg);}
+font-weight:var(--prgstg);
+margin: 0 auto 0 0;}
+
+#pie_de_pagina ul
+{text-align:left;
+margin: 0 auto 0 0;
+list-style-type:none;}
+
+#pie_de_pagina li
+{line-height:2rem;}
 
 #pie_de_pagina img
 {border-radius:500px;}
