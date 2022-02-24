@@ -54,7 +54,7 @@ contenidoPieDePagina.innerHTML =
 <a href="curso_html_1_0.html">
 	<p>1. Tu primer HTML</p>
 </a>
-<a href="#">
+<a href="curso_html_2_0.html">
 	<p>2. Avanzando en HTML</p>
 </a>
 <br>
