@@ -352,8 +352,7 @@ margin:0 25px 0 0;}
 #portada_index
 {display:flex;
 flex-direction:column;
-align-items:center;
-padding: 0px 0px 50px 0;
+padding: 0px 	0px 35px 0;
 gap:25px;
 color:var(--bl);}
 
@@ -362,9 +361,10 @@ color:var(--bl);}
 border-radius:0px;}
 
 #portada_index h1
-{font-size:var(--he1);
+{font-size:1.25rem;
+line-height:2rem;
 max-width:750px;
-text-align:center;
+text-align:left;
 padding:0 25px;}
 
 #portada_index button
@@ -376,6 +376,10 @@ border:none;
 color:var(--ne);
 font-size:var(--prg);
 font-weight:var(--prgw);}
+
+#portada_index a
+{margin: 0 auto 0 0;
+padding: 0 0 0 25px;}
 
 /* BIO --------------------------------------------*/
 /* BIO --------------------------------------------*/
@@ -391,7 +395,7 @@ font-weight:var(--prgw);}
 display:flex;
 flex-direction:column;
 align-items:center;
-padding:50px 25px;
+padding:35px 25px;
 gap:25px;}
 
 #bio p
@@ -422,7 +426,7 @@ font-weight:var(--prgw);}
 display:flex;
 flex-direction:column;
 align-items:center;
-padding:50px 25px;
+padding:35px 25px;
 gap:25px;}
 
 #curso_1_index p
@@ -444,7 +448,7 @@ font-weight:var(--prgw);}
 display:flex;
 flex-direction:column;
 align-items:center;
-padding:50px 25px;
+padding:35px 25px;
 gap:25px;}
 
 #curso_2_index p
@@ -479,8 +483,9 @@ padding:25px;
 gap:25px;
 color:var(--bl);}
 
-#pie_de_pagina h2
-{font-size:2rem;}
+#pie_de_pagina h2, h3
+{font-size:2rem;
+margin: 0 auto 0 0;}
 
 #pie_de_pagina p
 {max-width:var(--prgmxw);
