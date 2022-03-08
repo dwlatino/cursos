@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ECMAScript 2022 en español</title>
+<style>
+	*
+	{margin:0;
+	padding:0;}
+	
+	html
+	{font-family:sans-serif;
+	font-weight:400;}
+	
+	body
+	{box-sizing:border-box;
+	padding:25px;
+	max-width:650px;
+	margin:auto;}
+	
+	h1,h2,h3,h4,h5,h6
+	{margin:0 0 25px 0;}
+	
+	p
+	{margin:0 0 25px 0;
+	line-height:24px;}
+	
+	ul
+	{padding:0px;
+	list-style-type:none;
+	line-height:24px;
+	margin:0 0 25px 0;}
+	
+	ul li>ul
+	{padding:0px;
+	list-style-type:circle;
+	padding:0 0 0 25px;
+	margin:0 0 0 0;}
+	
+	a
+	{text-decoration:none;}
+	
+	.nota
+	{box-sizing:border-box;
+	padding: 25px 25px 0 25px;
+	border:solid 2px #707;
+	border-radius:10px;
+	margin:0 0 25px 0;
+	}
+	
+	.articulo
+	{box-sizing:border-box;
+	padding: 25px 0px 0 0px;
+	}
+</style>
+</head>
+
+<body>
+<h1>ECMAScript 2022&#174 en español</h1>
+<p>Traducido por Eduardo Osteicoechea<br>
+eduardooost@gmail.com<br>
+Marzo 2022</p>
+
+<article class="nota">
+<h2>Sobre esta especificación</h2>
+
+<p>El documento que encontrarás en <a href=" https://tc39.es/ecma262/">
+ https://tc39.es/ecma262/</a> es la especificación de ECMAScript más precisa 
+ y actualizada. Contiene la información de las tomas instantáneas anuales más recientes, 
+ y también cualquier 
+ <a href=" https://github.com/tc39/proposals/blob/HEAD/finished-proposals.md">
+ propuesta finalizada</a> 
+ (aquellas que han alcanzado la etapa 4 en el 
+ <a href="https://tc39.es/process-document/">
+ proceso de propuesta</a>, y que por consiguiente 
+ son implementadas en varias implementaciones y serán incluídas en la siguiente revisión 
+ práctica) 
+ desde que dicha toma instantánea fue realizada.</p>
+ 
+ <p>Este documento está disponible como una 
+ <a href=" https://tc39.es/ecma262/">página única</a> 
+ y cómo 
+ <a href="https://tc39.es/ecma262/multipage/">múltiples páginas</a>.</p>
+ 
+ <h2>Contribuyendo a esta especificación</h2>
+ 
+ <p>Esta especificación es desarrollada en GitHub con la ayuda de la comunidad
+  ECMAScript. Hay varias formas de contribuir al desarrollo de estas especificación:</p>
+  
+<ul>
+	<li>
+	Repositorio de GitHub: 
+		<a href="https://github.com/tc39/ecma262">
+			https://github.com/tc39/ecma262
+		</a>
+	</li>
+	<li>Consideraciones: 
+		<a href="https://github.com/tc39/ecma262/issues">Todas las consideraciones</a>, 
+		<a href="https://github.com/tc39/ecma262/issues/new">Archiva una nueva 
+		consideración</a>
+	</li>
+	<li>Paquete de prueba: 
+		<a href="https://github.com/tc39/test262">Paquete262</a>, 
+	</li>
+	<li>
+		Editores:
+			<ul>
+				<li>
+					<a href="#">Shu_yu Guo</a> 
+					<a href="https://twitter.com/_shu">(@_shu)</a>
+				</li>
+				<li>
+					<a href="#">Michael Ficarra</a> 
+					<a href="https://twitter.com/smooshMap">(@smooshMap)</a>
+				</li>
+				<li>
+					<a href="#">Kevin Gibbons</a> 
+					<a href="https://twitter.com/bakkoting">(@bakkoting)</a>
+				</li>
+			</ul>
+	</li>
+	<li>
+		Comunidad:
+			<ul>
+				<li>
+					Disertaciones:
+					<a href="https://es.discourse.group/">
+						https://es.discourse.group/
+					</a> 
+				</li>
+				<li>
+					Chat:
+					<a href="https://github.com/tc39/how-we-work/blob/HEAD/matrix-guide.md">
+						Matrix
+					</a>
+				</li>
+				<li>
+					Archivos de listas de correos:
+					<a href="https://esdiscuss.org/">https://esdiscuss.org/</a> 
+				</li>
+			</ul>
+	</li>
+</ul>
+
+<p>Acudir al 
+<a href="https://tc39.es/ecma262/#sec-colophon">colofón</a> 
+para más información sobre cómo se crea este documento.
+</p>
+ </article>
+
+
+ 
+
+ 
+ <article class="articulo">
+<h2>Introducción</h2>
+<p>Este estándar de Ecma define el lenguaje ECMAScript 2022. Esta es la 
+decimo-tercera edición de la Especificación de 
+Lenguaje ECMAScript. Desde la publicación de la 
+primera edición en 1997, ECMAScript ha crecido hasta llegar a ser uno de 
+los lenguajes de programación de propósito-general más usados. 
+Éste es mejor conocido como el lenguaje integrado en los navegadores web pero 
+también ha sido ampliamente adoptado para servidores y aplicaciones integradas.</p>
+
+<p>ECMAScript se basa en varias tecnologías emergentes, siendo 
+las más conocidas JavaScript (Netscape) y JScript (Microsoft). 
+El lenguaje fue inventado por Brendan Eich en Netscape y 
+apareció en el navegador 2.0 de esa compañía. Éste ha aparecido 
+en todos los navegadores subsecuentes de Netscape y en todos 
+los navegadores de Microsoft comenzando con Internet Explorer 3.0.</p>
+
+<p>El desarrollo de la Especificación de Lenguaje ECMAScript comenzó 
+en noviembre de 1996. La primera edición de éste estándar Ecma fue 
+adoptado por la Asamblea General Ecma de junio de 1997.</p>
+
+<p>Ése estandar Ecma fue enviado a ISO/IEC JTC 1 para 
+ser adoptado bajo el procedimiento "fast-track", y aprobó como estándar 
+internacional ISO/IEC 16262, en abríl de 1998. La Asamblea General Ecma 
+de Junio de 1998 aprobó la segunda edición de ECMA-262 para mantenerla 
+totalmente alineada con ISO/IEC 16262. Los cambios entre la primera y segunda 
+edición son de naturaleza editorial.</p>
+
+<p>La tercera edición del estándar introdujo poderosas expresiones regulares, 
+mejores manipulaciones de las "strings", nuevas declaraciones de control, 
+exepciones de manipulación "try/catch", definiciones de errores más ajustadas, 
+formateado para salidas numéricas y cambios menores en anticipación de 
+crecimiento futuro del lenguaje. La tercera edición del estándar ECMAScript fue 
+adoptada por la Asamblea General Ecma de diciembre del 1999 y publicada 
+como ISO/IEC 16262:2002 en junio del 2002.</p>
+ </article>
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
