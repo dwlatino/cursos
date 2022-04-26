@@ -1,38 +1,3 @@
-const navegacionCurso1 = document.getElementById("navegacion_curso_1");
-const navegacionSecundariaCurso1 = document.getElementById("navegacion_secundaria_curso_1");
-
-navegacionCurso1.innerHTML = 
-`
-<h1>Menú de curso</h1>
-	<ul>
-		<a href="curso_html_2_0.html"><li>0. Introducción al curso</li></a>
-		<a href="curso_html_2_1.html"><li>1. La semántica de HTML</li></a>
-		<a href="curso_html_2_2.html"><li>2. Tablas en HTML</li></a>
-		<a href="curso_html_2_3.html"><li>3. Formularios en HTML</li></a>
-		<a href="curso_html_2_3.html"><li>4. Entradas en HTML</li></a>
-		<a href="curso_html_2_4.html"><li>5. Entidades especiales en HTML</li></a>
-		<a href="curso_html_2_5.html"><li>6. Sendas de archivos en HTML</li></a>
-		<a href="curso_html_2_6.html"><li>7. Cuadros insertados en HTML</li></a>
-		<a href="curso_html_2_7.html"><li>8. Práctica avanzada de HTML</li></a>
-	</ul>
-`;
-
-navegacionSecundariaCurso1.innerHTML = 
-`
-<h1>Menú de curso</h1>
-	<ul>
-		<a href="curso_html_2_0.html"><li>0. Introducción al curso</li></a>
-		<a href="curso_html_2_1.html"><li>1. La semántica de HTML</li></a>
-		<a href="curso_html_2_2.html"><li>2. Tablas en HTML</li></a>
-		<a href="curso_html_2_3.html"><li>3. Formularios en HTML</li></a>
-		<a href="curso_html_2_3.html"><li>4. Entradas en HTML</li></a>
-		<a href="curso_html_2_4.html"><li>5. Entidades especiales en HTML</li></a>
-		<a href="curso_html_2_5.html"><li>6. Sendas de archivos en HTML</li></a>
-		<a href="curso_html_2_6.html"><li>7. Cuadros insertados en HTML</li></a>
-		<a href="curso_html_2_7.html"><li>8. Práctica avanzada de HTML</li></a>
-	</ul>
-`;
-
 const portadaCurso1 = document.getElementById("portada_curso_1");
 portadaCurso1.innerHTML =
 `
@@ -42,7 +7,6 @@ portadaCurso1.innerHTML =
 	<button>comenzar</button>
 </a>
 `;
-
 
 let ubicacionActual = window.location.pathname;
 console.log(ubicacionActual);
@@ -58,8 +22,49 @@ let listaDeUbicacionesCurso2 = [
 "curso_html_2_4.html", 
 "curso_html_2_5.html", 
 "curso_html_2_6.html",
-"curso_html_2_7.html"];
+"curso_html_2_7.html",
+"curso_html_2_8.html"];
 console.log(listaDeUbicacionesCurso2);
+
+ubicacionDeCursoActual=listaDeUbicacionesCurso2.indexOf(ubicacionActualOperable);
+console.log(ubicacionDeCursoActual);
+
+const menuVisible=[
+"0. Introducción al curso",
+"1. La semántica de HTML",
+"2. Tablas en HTML",
+"3. Formularios en HTML",
+"4. Entradas en HTML",
+"5. Entidades especiales en HTML",
+"6. Sendas de archivos en HTML",
+"7. Cuadros insertados en HTML",
+"8. Práctica avanzada de HTML"];
+
+const referenciaDiferente=`<a id='ubicacion_actual_resaltada' href='${listaDeUbicacionesCurso2[ubicacionDeCursoActual]}'>${menuVisible[ubicacionDeCursoActual]}</a>`;
+console.log(referenciaDiferente);
+
+let referenciasCasiCompletasMenuOriginal = [
+"curso_html_2_0.html'>0. Introducción al curso</a>",
+"curso_html_2_1.html'>1. La semántica de HTML</a>",
+"curso_html_2_2.html'>2. Tablas en HTML</a>",
+"curso_html_2_3.html'>3. Formularios en HTML</a>",
+"curso_html_2_4.html'>4. Entradas en HTML</a>",
+"curso_html_2_5.html'>5. Entidades especiales en HTML</a>",
+"curso_html_2_6.html'>6. Sendas de archivos en HTML</a>",
+"curso_html_2_7.html'>7. Cuadros insertados en HTML</a>",
+"curso_html_2_8.html'>8. Práctica avanzada de HTML</a>",
+];
+
+const menuParaInsertar=referenciasCasiCompletasMenuOriginal.map(i => "<a href='" + i);
+console.log(menuParaInsertar);
+
+menuParaInsertar.splice(ubicacionDeCursoActual, 1, referenciaDiferente);
+console.log(menuParaInsertar);
+
+const navegacionCurso1= document.getElementById("navegacion_curso_1");
+const navegacionSecundariaCurso1= document.getElementById("navegacion_secundaria_curso_1");
+navegacionCurso1.innerHTML=menuParaInsertar.join("<br>");
+navegacionSecundariaCurso1.innerHTML=menuParaInsertar.join("<br>");
 
 
 

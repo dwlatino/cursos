@@ -48,12 +48,6 @@ code strong
 hr
 {border:solid 1px var(--mm);}
 
-#insertado a
-{display:block;
-margin:0px;
-text-decoration:none;
-font-weight:900;}
-
 #ubicacion_actual_resaltada
 {color:var(--bl);
 font-weight:900;

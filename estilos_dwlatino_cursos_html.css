@@ -48,6 +48,7 @@ code strong
 hr
 {border:solid 1px var(--mm);}
 
+
 /* PORTADA CURSO ---------------*/
 /* PORTADA CURSO ---------------*/
 /* PORTADA CURSO ---------------*/
@@ -88,7 +89,7 @@ font-weight:var(--prgw);}
 /* NAVEGACION CURSO ---------------*/
 /* NAVEGACION CURSO ---------------*/
 
-#navegacion_curso_1
+#navegacion_curso_1, #navegacion_secundaria_curso_1
 {background:var(--bl);
 display:flex;
 color:var(--ne);
@@ -97,34 +98,22 @@ align-items:center;
 padding:32.5px 32.5px 35px 32.5px;
 gap:0px;}
 
-#navegacion_curso_1 li
-{margin:25px 0 0 0;}
-
-#navegacion_curso_1 a
+#navegacion_curso_1 a, #navegacion_secundaria_curso_1 a
 {text-decoration:none;
 list-style-type:none;
 font-weight:900;
-color:var(--mm);}
+color:var(--mm);
+margin:10px;}
 
-#navegacion_secundaria_curso_1
-{background:var(--bl);
-display:flex;
-color:var(--ne);
-flex-direction:column;
-align-items:center;
-padding:35px 25px 35px 25px;
-gap:0px;}
-
-#navegacion_secundaria_curso_1 li
-{margin:25px 0 0 0;}
-
-#navegacion_secundaria_curso_1 a
-{text-decoration:none;
-list-style-type:none;
-font-weight:900;
-color:var(--mm);}
-
-
+#ubicacion_actual_resaltada
+{background:var(--mm);	
+border-radius:30px;
+color:var(--bl)
+!important;
+padding:10px 20px;
+box-sizing:border-box;
+margin:20px;
+}
 /* CONTENIDO CURSO ---------------*/
 /* CONTENIDO CURSO ---------------*/
 /* CONTENIDO CURSO ---------------*/

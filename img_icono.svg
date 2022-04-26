@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="124.09828"
-   height="34.14661"
-   viewBox="0 0 124.09828 34.146615"
+   width="153.4317"
+   height="153.4317"
+   viewBox="0 0 153.4317 153.43172"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="88.668807"
-     inkscape:cy="-32.997689"
+     inkscape:cx="48.20747"
+     inkscape:cy="46.441685"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -41,7 +41,9 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-midpoints="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -50,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,26 +60,32 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-30.294391,-296.54371)"
+     transform="translate(-13.286217,-238.90115)"
      style="opacity:0.98000004">
+    <circle
+       style="opacity:1;fill:#770077;fill-opacity:1;stroke:none;stroke-width:35.33858109;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.40784314"
+       id="path818"
+       cx="90.002068"
+       cy="315.617"
+       r="76.715851" />
     <g
        aria-label="&lt;DWLATINO&gt;"
        transform="matrix(1.2195218,0,0,1.2195218,18.17554,292.82551)"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.66666651px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#770077;fill-opacity:1;stroke:none;stroke-width:0.8199935"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.66666651px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#eeff00;fill-opacity:1;stroke:none;stroke-width:0.8199935"
        id="flowRoot842">
       <path
          d="M 9.9373792,3.048897 H 23.737379 q 4.68,0 8.24,1.72 3.6,1.68 5.56,4.84 2,3.16 2,7.44 0,4.28 -2,7.44 -1.96,3.16 -5.56,4.88 -3.56,1.68 -8.24,1.68 H 9.9373792 Z m 13.3999998,20.64 q 3.04,0 4.84,-1.72 1.84,-1.76 1.84,-4.92 0,-3.16 -1.84,-4.88 -1.8,-1.76 -4.84,-1.76 h -3.96 v 13.28 z"
-         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:40px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Heavy';fill:#770077;fill-opacity:1;stroke-width:0.8199935"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:40px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Heavy';fill:#eeff00;fill-opacity:1;stroke-width:0.8199935"
          id="path874"
          inkscape:connector-curvature="0" />
       <path
          d="m 87.53725,3.048897 -8.96,28 h -10.12 l -4.52,-14.96 -4.76,14.96 h -10.12 l -8.96,-28 h 9.72 l 4.88,15.92 5.16,-15.92 h 8.68 l 4.88,16.12 5.16,-16.12 z"
-         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:40px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Heavy';fill:#770077;fill-opacity:1;stroke-width:0.8199935"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:40px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Heavy';fill:#eeff00;fill-opacity:1;stroke-width:0.8199935"
          id="path876"
          inkscape:connector-curvature="0" />
       <path
          d="m 89.617173,3.048897 h 9.44 v 20.68 h 12.639997 v 7.32 H 89.617173 Z"
-         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:40px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Heavy';fill:#770077;fill-opacity:1;stroke-width:0.8199935"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:40px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Heavy';fill:#eeff00;fill-opacity:1;stroke-width:0.8199935"
          id="path878"
          inkscape:connector-curvature="0" />
     </g>
