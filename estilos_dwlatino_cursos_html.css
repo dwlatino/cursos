@@ -94,25 +94,32 @@ font-weight:var(--prgw);}
 display:flex;
 color:var(--ne);
 flex-direction:column;
-align-items:center;
-padding:32.5px 32.5px 35px 32.5px;
-gap:0px;}
+align-items:left;
+box-sizing:border-box;
+padding:35px 25px 35px 25px;
+gap:15px;}
 
 #navegacion_curso_1 a, #navegacion_secundaria_curso_1 a
 {text-decoration:none;
 list-style-type:none;
 font-weight:900;
 color:var(--mm);
-margin:10px;}
+margin:0px;}
 
 #ubicacion_actual_resaltada
 {background:var(--mm);	
-border-radius:30px;
 color:var(--bl)
 !important;
-padding:10px 20px;
+line-height:1.5rem;
+padding:5px 10px 10px 10px;
 box-sizing:border-box;
-margin:10px;
+}
+
+#ubicacion_actual_resaltada::before
+{content:"Estás aquí \a";
+white-space: pre;
+font-size:.75rem;
+color:var(--am);
 }
 /* CONTENIDO CURSO ---------------*/
 /* CONTENIDO CURSO ---------------*/
